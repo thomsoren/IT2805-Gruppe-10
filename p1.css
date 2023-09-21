@@ -1,12 +1,26 @@
-* {
+html {
     background-color: bisque;
+    text-align: center;
 }
 
 body {
     margin: 0 auto;
-    text-align: center;
     background-color: brown;
     height: 100%;
+}
+
+article {
+    width: 960px;
+    margin: auto;
+    max-width: 65ch;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+
+p {
+    max-width: 65ch;
+    text-align: center;
 }
 
 #date {
