@@ -1,10 +1,17 @@
 * {
-    text-align: center;
+    background-color: bisque;
 }
 
-h1 {
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: brown;
+    height: 100%;
+}
 
-    text-align:
+#date {
+    text-align: left;
+
 }
 
 h2 {
