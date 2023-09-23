@@ -1,23 +1,23 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: bisque;
-    text-align: center;
 }
 
 body {
+    position: relative;
     width: 960px;
     margin: auto;
-    max-width: 65ch;
+    max-width: 70ch;
     line-height: 1.5;
     font-size: 18px;
+    text-align: center;
+    align-self: center;
+
 }
 
-#article {
-    border: 5px solid black
-}
-
-#article-2 {
-    border: 5px solid black;
+#article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8, #article9, #article10 {
+    border: 5px dotted black;
+    margin-bottom: -5px;
 }
 
 h1 {
