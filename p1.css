@@ -2,15 +2,6 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: bisque;
 }
-#bg-right {
-    background-color: #C4DFFF;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    z-index: -1;
-}
 
 body {
     position: relative;
@@ -27,6 +18,7 @@ body {
 #article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8, #article9, #article10 {
     border: 5px dotted black;
     margin-bottom: -5px;
+    background-color: #C4DFFF;
 }
 
 h1 {
