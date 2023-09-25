@@ -36,7 +36,15 @@ h3 {
 p,
 blockquote,
 ul,
-ol {
+ol,
+ul > li,
+ol > li{
     font-size: 1em;
     line-height: 1.5em;
+    text-align: left;
+    padding: 20px;
+}
+
+li::marker {
+    margin-left: 20px;
 }
