@@ -34,17 +34,15 @@ h3 {
 }
 
 p,
-blockquote,
-ul,
-ol,
-ul > li,
-ol > li{
+blockquote
+    {
     font-size: 1em;
     line-height: 1.5em;
     text-align: left;
     padding: 20px;
 }
 
-li::marker {
-    margin-left: 20px;
+li {
+    text-align: left;
+    padding-left: 20px;
 }
