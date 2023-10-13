@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>P2</title>
+</head>
+<body>
+<div id="body_layout">
+<h1>Page Layout and appearance</h1>
+<p>In coming up with the universal layout for the page, we wanted to focus on simplicity and clean colors. The
+    white-gray background color is chosen to be easy on the eye, and it will also make text and interactive elements
+    stand out. The site needs to have a professional look, since the watch retailer has a good reputation to uphold, and
+    is dealing in luxury watches. That’s also a reason for the simplistic look of the universal layout.</p>
+<img src="img/Untitled.png" alt="Din mor">
+<p>The specific styling for the website that will apply to all pages can be found below:</p>
+<ul>
+    <li id="body_li--nav">Navigation bar:</li>
+    <li>Text: White</li>
+    <li>Background: Dark shade - #2D2D2D</li>
+    <li>Links: Color: #4A4E69, with an underline, 2.67em</li>
+    <li>Hover links - : When the links are hovered, will have an animation where they enlarge 10%, turn bold, and turn
+        the RGB color - #F2E9E4. The site you are currently visiting will also have this look at all times, to make it
+        obvious for the user where they currently are located.
+    </li>
+    <li>Logo: Logo will be displayed at the top-middle of the navigation bar.</li>
+    <li>In the top right corner, there will be a cart logo, which can be clicked at any time. It will take you to the
+        checkout.html page.
+    </li>
+    <li>The footer will contain contact information and a sitemap, with the same links as in the navigation bar. The
+        links will be the same as in the navbar.
+    </li>
+    <li id="body_li--body">Body:</li>
+    <li>h1 - 5em</li>
+    <li>Body width: 100%;</li>
+    <li>Background color: #F1F1F1</li>
+    <li>p elements - 1.08em</li>
+    <li id="body_li--footer">Footer:</li>
+    <li>Text: White</li>
+    <li>Background: Dark shade - #2D2D2D</li>
+    <li>Sitemap, Contact and Address and postal office will be their own div. They will be made into flexbox as columns,
+        and justify-content: space-around
+    </li>
+    <li>Footer headings - Semi Bold and 2.09em, color: #F2E9E4</li>
+    <li>Sitemap content: Color: #F2E9E4, 1.5em</li>
+</ul>
+</div>
+<div id="body_content">
+    <h1>Content</h1>
+    <ul>
+        <li>
+            <h2>frontpage.html</h2>
+
+            This page is the first page the customer will see when redirected to our store. This is why it’s important to capture the customer’s attention quickly. Therefore we will include an overview of the most wanted luxury watches on our site. These are typically the most popular watched that have been sold off our website, as well as the newly acquired watches.
+
+            We will use the simplicity of pictures alongside some small text only containing the essential information about the products, such as pricing and the name and make of the watch, as to not overwhelm the customer
+
+            These watches will be in rounded boxes, and will be offset by half a box length downwards, alternating between the left and the right side of the page.
+
+            The boxes themselves are 628x553.
+
+            The raw size of the watches will be 530x530. Alot of this will be whitespace, so the main point is that they fit snuggly.
+
+            The boxes on the left side will have the picture of the watch on the left side of the box, with the text to the right of it.
+
+            The boxes on the right side will have the picture of the watch on the right side of the box, with the text to the left of it.
+
+            We will also include the option to select whether to buy or select to sell on the front page as well. This, as well as the points made in the first paragraph about the frontpage, are why the frontpage achieves it’s goal to capture and entice the customer to use our store.
+        </li>
+        <img src="img/Frontpage_html.png" alt="frontpage">
+        <li>
+            <h2>buy.html</h2>
+
+            This page will contain an overview of all our watches. It will include a picture of the watch, pricing, as well as the name of the product. To get more information about each watch - click on a watch and it will take you to individualWatches.html
+
+            Each watch will be displayed in a grid format, with a div of their own, containing the picture of the watch, with the pricing and the name of the watch displayed as a caption. When the screen-size decreases, the divs should move accordringly:
+
+            1. **Default Layout**: When the browser window is at a standard desktop size, the grid should display three columns. The boxes within these columns should be evenly distributed across the width of the container.
+            2. **Intermediate Layout**: As the browser window size decreases, reaching a first breakpoint (800 pixels in width), the grid should reconfigure to display two columns. The boxes should reflow to fit within these two columns.
+            3. **Mobile Layout**: Upon reaching a second, smaller breakpoint (500 pixels in width), the grid should collapse into a single column layout. Each box should take up the full width of the container.
+        </li>
+        <img src="img/buy.html.png" alt="buy.html">
+        <li>
+            <h2>individualWatches.html</h2>
+
+            This page will include more in-depth information about the watch. The information comes in the form of more text about what makes the watch so special, and general sales tactics to market to enthusiasts. There should be a picture and a text centered in the screen. The picture should take up a lot of space, so it will have a width and height of:
+
+            width in vw = (800 / 1920) * 100 = 41.67vw
+            height in vh = (600 / 1080) * 100 = 55.56vh
+
+            The watch name will be a h1, the price and text will be p, and the “Price” and “Description” headings will be a p with a bold font.
+
+            on the bottom-right of the text, there will be a button with the text “Buy” with a background color #4A4E69. The width and height of the box will be 167x48px, but converted to vh and wh, and the “buy” text inside of the button will be centered, have a font size of 2.08em and be white.
+        </li>
+        <img src="img/individualWatches.html.png" alt="individualwatches.html">
+        <li>
+            <h2>checkout.html</h2>
+
+            This page’s goal is to complete the first part of a sale, the validation and billing information.
+
+            This page will ask you for the buyer’s billing details, like first and last name, address details, province as well as phone number.
+
+            These boxes are all input type = “text”. This is because there isn’t any e-mailing information necessary, just the names of the customer as well as the city details. Phone number is also just a input type = “text”. All of the input boxes are required to fill out to continue.
+
+            These input boxes are an offset grey colour, compared to the background, and are rounded in shape to give a more “softer” look, giving a satisfactory feeling to the customer.
+
+            There will also be pricing information in a box off to the side of the billing information. This box includes total price to pay, added costs like taxes, and price of the watch on its own. This box is beige in color, with a nice list over the different costs that add to the price.
+
+            Usually, the button called “Next”, would redirect you to the page where you would input your payment method. As of this implementation of the website, it will redirect you to “error.html”.
+        </li>
+        <img src="checkout.html.png" alt="checkout.html">
+        <li>
+            <h2>sell.html</h2>
+
+            This page has the goal of letting the user fill out a form to receive an offer from the websites owner.
+
+            It will have a form, asking the seller for various information, like the brand and name of the watch, a description of the watch, wanted price for the watch, as well as a picture of the watch alongside the seller’s address.
+
+            This will give us, the buyer, necessary information to be able to handle a transaction. However, since they are typing in what they want to get for their watch, there will need to be a bit of discussion between us, the buyer, and the seller. This is to agree on a price.
+
+            This will allow both parties to be satisfied with the price, and will therefore help with the transaction. This is why the webpage achieves its goal of letting the sellers sell their watches to us.
+
+            These input boxes are an offset grey colour, compared to the background, and are rounded in shape to give a more “softer” look, giving a satisfactory feeling to the customer.
+
+            All the input boxes will have the required=“required”.
+            <ul>
+                <li>The first input box will have input type=”text”, so the user can input their name. </li>
+                <li> The next input box will be a dropdown menu, with different watch brands to select from.</li>
+                <li>The description box will be a text area type, so the user can fill in information about the watch.</li>
+                <li>The wanted price will be a text type, so they can type in the sum that they are looking for.</li>
+                <li>The “add picture” will let the user upload several files. It will have the input type=”file”</li>
+                <li>Adress will be a input type=”text”</li>
+                <li>email will be a input type=”email”</li>
+            </ul>
+        </li>
+        <img src="img/sell.html.png">
+        <li>
+            <h2>about.html</h2>
+
+            This page will be a short page containing just a small, bite-sized chunk of text with information about the company. Things such as how long we’ve been in business, the security you gain from working with us and so on.
+
+            This also includes the fictional man behind the company that “hired us”. A picture of the man, to give the website a face that customers can recognize, is important. This picture will be 609x516 in size, and off to the right of the text.
+
+            This page’s main task is to gain familiarity with the customers. The more they “get to know us”, the higher the chance that they will return to us when they want to do business. Their “brand loyalty” increases.
+        </li>
+        <img src="img/about.html.png">
+        <li>
+            <h2>error.html</h2>
+
+            This page will simply be a single line of text saying “Sorry, this function is currently not available”. The text will be a 2.55EM. This is a dynamic form of text, which changes size based on the size of the browser it is being used by.
+
+            The page also serves the purpose of being a template. It is the most basic out of all the pages, and therefore is the easiest to use as a foundation for the rest of the pages.
+
+            This is to be used where further implementation have been restricted due to project limitations.
+
+            This page achieves its goal the easiest out of all the pages, because its task is so simple. However, this page will be essential for future development of the website as a whole.
+        </li>
+        <img src="img/error.html.png">
+        <li>
+            <h2>contact.html</h2>
+            The header of the page has the fontsize 70px, medium bold and aligned to the top left corner. This page will have a contact form that consist of four inputs: Fullname, E-mail, phonenumber and message. Each input will have a small title indicating what to need to filled. The inputboxes will have the color #D9D9D9 and a width of 502px. The form will be submitted by pressing the submit-button with the color #4A4E69 and the size 185x46.
+            On the right hand side we have a box with the size 611x312, where there are two head element with bold text followed by light text underneath. Under the first header “Whatch Me Trade”(25px,  bold), the address info will be displayed with light text and font size 15px. The next heading in the box is “Contact”(25px, bold). Underneath there is an “phone” icon with size 20x20 and the phonenumber. The email has a “mail” icon on the left side with the size 24x24.
+        </li>
+        <img src="img/contact.html.png">
+    </ul>
+</div>
+</body>
+</html>
