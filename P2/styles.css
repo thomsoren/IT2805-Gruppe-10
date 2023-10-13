@@ -1,0 +1,60 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+}
+
+body {
+    position: relative;
+    width: 960px;
+    margin: auto;
+    max-width: 70ch;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: center;
+    align-self: center;
+
+}
+
+#body_content, #body_layout{
+    position: relative;
+    border: 5px dotted black;
+    margin-bottom: -5px;
+    background-color: #C4DFFF;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p,
+blockquote
+{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 20px;
+}
+
+li {
+    text-align: left;
+    padding-left: 20px;
+}
+
+img{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    margin: -50px;
+}
+.entry-content {
+    overflow: visible;
+}
