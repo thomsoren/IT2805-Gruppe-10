@@ -67,7 +67,9 @@
 
             We will also include the option to select whether to buy or select to sell on the front page as well. This, as well as the points made in the first paragraph about the frontpage, are why the frontpage achieves it’s goal to capture and entice the customer to use our store.
         </li>
-        <img src="img/Frontpage_html.png" alt="frontpage">
+    </ul>
+    <img src="img/Frontpage_html.png" alt="frontpage">
+    <ul>
         <li>
             <h2>buy.html</h2>
 
@@ -79,7 +81,9 @@
             2. **Intermediate Layout**: As the browser window size decreases, reaching a first breakpoint (800 pixels in width), the grid should reconfigure to display two columns. The boxes should reflow to fit within these two columns.
             3. **Mobile Layout**: Upon reaching a second, smaller breakpoint (500 pixels in width), the grid should collapse into a single column layout. Each box should take up the full width of the container.
         </li>
-        <img src="img/buy.html.png" alt="buy.html">
+    </ul>
+    <img src="img/buy.html.png" alt="buy.html">
+    <ul>
         <li>
             <h2>individualWatches.html</h2>
 
@@ -92,7 +96,9 @@
 
             on the bottom-right of the text, there will be a button with the text “Buy” with a background color #4A4E69. The width and height of the box will be 167x48px, but converted to vh and wh, and the “buy” text inside of the button will be centered, have a font size of 2.08em and be white.
         </li>
-        <img src="img/individualWatches.html.png" alt="individualwatches.html">
+    </ul>
+    <img src="img/individualWatches.html.png" alt="individualwatches.html">
+    <ul>
         <li>
             <h2>checkout.html</h2>
 
@@ -108,7 +114,9 @@
 
             Usually, the button called “Next”, would redirect you to the page where you would input your payment method. As of this implementation of the website, it will redirect you to “error.html”.
         </li>
-        <img src="checkout.html.png" alt="checkout.html">
+        </ul>
+        <img src="img/checkout.html.png" alt="checkout.html">
+    <ul>
         <li>
             <h2>sell.html</h2>
 
@@ -133,7 +141,9 @@
                 <li>email will be a input type=”email”</li>
             </ul>
         </li>
+    </ul>
         <img src="img/sell.html.png">
+    <ul>
         <li>
             <h2>about.html</h2>
 
@@ -143,7 +153,9 @@
 
             This page’s main task is to gain familiarity with the customers. The more they “get to know us”, the higher the chance that they will return to us when they want to do business. Their “brand loyalty” increases.
         </li>
+    </ul>
         <img src="img/about.html.png">
+    <ul>
         <li>
             <h2>error.html</h2>
 
@@ -155,14 +167,65 @@
 
             This page achieves its goal the easiest out of all the pages, because its task is so simple. However, this page will be essential for future development of the website as a whole.
         </li>
+    </ul>
         <img src="img/error.html.png">
+    <ul>
         <li>
             <h2>contact.html</h2>
             The header of the page has the fontsize 70px, medium bold and aligned to the top left corner. This page will have a contact form that consist of four inputs: Fullname, E-mail, phonenumber and message. Each input will have a small title indicating what to need to filled. The inputboxes will have the color #D9D9D9 and a width of 502px. The form will be submitted by pressing the submit-button with the color #4A4E69 and the size 185x46.
             On the right hand side we have a box with the size 611x312, where there are two head element with bold text followed by light text underneath. Under the first header “Whatch Me Trade”(25px,  bold), the address info will be displayed with light text and font size 15px. The next heading in the box is “Contact”(25px, bold). Underneath there is an “phone” icon with size 20x20 and the phonenumber. The email has a “mail” icon on the left side with the size 24x24.
         </li>
-        <img src="img/contact.html.png">
+
     </ul>
+    <img src="img/contact.html.png">
+</div>
+<div id="body_Navigation_map">
+    <h2>Navigation structure text</h2>
+    <p>The navigation structure of the website should allow every page to be able to redirect back to the frontpage, but not the other way around. This is possible through a button which each website share. Although most pages can be accessed from the frontpage, since the watches are pretty expensive the website will only allow single purchases. Because of this, the website does not contain a shopping cart. The sell and checkout webpages are the only ones redirecting towards the error page because there isn’t actually possible to buy or sell watches yet. The seller info webpage is also only accessible from the individualWatches webpage as these directly correlates to the specific watch. Easy accessibility to each page will allow the website to be functional for both the disabled and elderly viewers.</p>
+    <h2>List of files and folders:</h2>
+    <ul>
+        <li>P2_design_10.html
+        <ul>
+            <li>frontpage.html</li>
+            <li>buy.html</li>
+            <li>sell.html</li>
+            <li>individualWatches.html</li>
+            <li>checkout.html</li>
+            <li>error.html</li>
+            <li>about.hmtl</li>
+            <li>contact.html</li>
+            <li>sellerinfo.html</li>
+            <li>images/
+                <ul>
+                    <li>breitling_superocean.png</li>
+                    <li>omega_seamaster.png</li>
+                    <li>omega_aqua_terra.png</li>
+                    <li>Rolex_Oyster_GMT.png</li>
+                </ul>
+            </li>
+            <li>styles/
+                <ul>
+                    <li>styling.css</li>
+                </ul>
+            </li>
+            <li>scripts/
+                <ul>
+              <li>javascript.js</li>
+                </ul>
+            </li>
+        </ul>
+        </li>
+    </ul>
+</div>
+<div id="body_minimum_requirements">
+    <h2>Minimum Requirements</h2>
+    <p>Our website will contain rollover effects when users hover links. They will, as mentioned in “layout and appearence” be enlargened by using a javascript function. We will also enlarge picture upon hovering them. A responsive design is user friendly and makes the navigation easier, especially for the elderly and disabled. Aesthetically speaking it is more satisfying to press buttons that responds before pressing. The function for links will be called “linkroll” and the function for images will be called “picroll”.
+
+        We will be using form validation functions for our “sell.html”, “contact.html” and “checkout.html” webpage. For obligatory text fields, a function will be checking the fields before redirection the user. For a professional designing purpose, users will not be allowed to enter their own name or the watches name with illegal characters (”!”, “?”, “,”, “.”, ….). The function will be called “valid”.
+
+        We will also be using animation functions to create an image slider in the individualWatches.html webpage so the user is able to scroll through different pictures of the same watch easily. For the same reasons as the rollover effect, this will create a more user friendly experience. The function will be called “imgslider”.
+
+        We will be using a product filtering function where users can sort the watches in “buy.html” by price/model/age. Different user might be looking for specific watches, which can take a lot of time without a proper system for filtering the watches properly. Having users navigate to their wanted watch further enhances the user experience. The function will be called  “sort”.</p>
 </div>
 </body>
 </html>

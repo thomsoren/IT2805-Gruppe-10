@@ -15,7 +15,7 @@ body {
 
 }
 
-#body_content, #body_layout{
+#body_content, #body_layout, #body_Navigation_map, #body_minimum_requirements{
     position: relative;
     border: 5px dotted black;
     margin-bottom: -5px;
@@ -50,10 +50,7 @@ li {
 
 img{
     width: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-    margin: -50px;
+    margin: auto;
 }
 .entry-content {
     overflow: visible;
