@@ -15,7 +15,7 @@ body {
 
 }
 
-#body_content, #body_layout, #body_Navigation_map, #body_minimum_requirements{
+#body_content, #body_layout, #body_Navigation_map, #body_minimum_requirements, #article11{
     position: relative;
     border: 5px dotted black;
     margin-bottom: -5px;
@@ -54,4 +54,13 @@ img{
 }
 .entry-content {
     overflow: visible;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr auto 1fr;
+}
+
+.grid-item{
+    border: solid black 2px;
 }
