@@ -1,0 +1,148 @@
+body {
+  margin: 0px;
+  background-color: #F1F1F1;
+}
+
+#menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2D2D2D;
+  height: 15vh;
+  padding-bottom: 1%;
+  margin-top: -1%;
+  overflow: hidden;
+}
+
+.menu_link {
+  background-color: transparent;
+  color: #F1F1F1;
+  text-align: center;
+  padding-top: 2vh;
+  font-size: 2.2vw;
+  width: 15vw;
+  border: none;
+  cursor: pointer;
+}
+
+#logo {
+  height: 8vh;
+}
+
+.menu_link:hover {
+  color: #F2E9E4;
+  text-decoration: underline;
+  font-size: 2.4vw;
+}
+
+.footer_link:hover {
+  color: #F2E9E4;
+  text-decoration: underline;
+  font-size: 1.3vw;
+}
+
+#cart, #cart_button {
+  background-color: #2D2D2D;
+  border: 0;
+  padding: 0;
+}
+
+#cart {
+  height: auto;
+  width: 3.5vw;
+  cursor: pointer;
+}
+
+#cart_button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+footer {
+  margin: auto;   
+  bottom: -100px; 
+  height: auto;
+  background-color: #2D2D2D;
+  line-height: 100px;
+  color: aliceblue;
+}
+
+.wrapper {    
+  min-height: calc(100vh);
+  margin: auto;
+  padding-bottom: auto;
+}
+
+.footer_link {
+  background-color: #2D2D2D;
+  color: white;
+  font-size: 1.11vw;
+  text-align: center;
+  margin: 0;
+  border: none;
+  width: 15vw;
+  font-family: "Kanit", "sans-serif";
+  cursor: pointer;  
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 2px;
+}
+
+.flex-box {
+  flex: 1;
+  text-align: center;
+  border: none;
+  line-height: 2em;
+  font-size: 1.11vw;
+  font-family: 'Kanit', sans-serif;
+}
+
+.flex-box > h1 {
+  font-size: 1.7vw;
+} 
+
+#phone{
+
+  width: 15px;
+  height: 15px;
+
+}
+
+#message{
+  
+  top: -50%;
+  bottom: -1px;
+  width: 20px;
+  height: auto;
+  
+  
+}
+
+#emailtekst{
+  height: fit-content;
+}
+
+
+@media only screen and (max-width: 750px) {
+  body {
+    background-color: lightblue;
+  }
+  .footer_link {
+      font-size: 25px;
+  }
+  .flex-box {
+      font-size: 15px;
+  }
+  .footer_link:hover {
+      color: #F2E9E4;
+      text-decoration: underline;
+      font-size: 30px;
+}
+}
