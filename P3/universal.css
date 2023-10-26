@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     background-color: #F1F1F1;
+    height:100%;
 }
 
 #menu {
@@ -126,10 +127,12 @@ footer {
 }
 
 
-@media only screen and (max-width: 750px) {
-    body {
-      background-color: lightblue;
+@media (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        width: auto;
+        height: 100%;
     }
+
     .footer_link {
         font-size: 25px;
     }
@@ -141,4 +144,7 @@ footer {
         text-decoration: underline;
         font-size: 30px;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
 }
