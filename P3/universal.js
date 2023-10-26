@@ -1,3 +1,3 @@
-console.log("moren din")
-
+footer = getElementbyid("footer") 
+document.body.appendChild(footer.content);
 
