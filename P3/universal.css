@@ -14,7 +14,7 @@ body {
 .dropdown {
     display: none;
 }
-  
+
 #menu {
     display: flex;
     flex-direction: column;
@@ -50,25 +50,6 @@ body {
     top: 1.2vw;
 }
 
-#cart_img {
-    height: auto;
-    width: 3.5vw;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-
-}
-
-#cart_button {
-    position: absolute;
-    top: 1.5vw;
-    right: 1.5vw;
-    background-color: #2D2D2D;
-    border: 0;
-    padding: 0;
-    transition: 0.15s;
-}
 
 footer {
     display: flex;
@@ -160,7 +141,7 @@ footer {
         border: none;
         cursor: pointer;
         transition: 0.15s;
-        top: 10px;
+        top: 23px;
       }
 
       #burger_bar {
