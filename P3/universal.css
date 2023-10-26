@@ -1,3 +1,4 @@
+
 body {
     background-color: #F1F1F1;
     height:100%;
@@ -213,4 +214,26 @@ footer {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+}
+
+.bbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#bbox1, #bbox2, #bbox3, #bbox4, #bbox5, #bbox6 {
+    width: 311px;
+    height: 359px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10%;
+    background-color: rgb(173, 177, 177);
+    text-align: center;
+    flex-basis: calc(33.333% -10px);  
+}
+
+#bbbox1 {
+    align-self: flex-end;
+    padding-top: 1px;
 }
