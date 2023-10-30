@@ -16,11 +16,18 @@ body {
     background-color: #2D2D2D;
     height: 11vw;
     padding-bottom: 2%;
-    margin-top: -1%;
     overflow: hidden;
     
 }
-  
+
+.content {
+    z-index: 2;
+}
+
+h1 {
+    color: red;
+}
+
 .menu_link {
     position: relative;
     bottom: 1.2vw;
