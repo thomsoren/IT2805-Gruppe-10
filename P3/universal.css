@@ -131,6 +131,24 @@ footer {
     height: fit-content;
 }
 
+#Sorry{
+
+    font-family: "Kanit", "sans-serif";
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    
+    width: 50%;
+    height: 50%;
+}
+
+#unavailable{
+    font-family:  "sans-serif";
+    
+    text-align: center;
+
+}
+
 
 @media only screen and (max-width: 750px) {
     body {
