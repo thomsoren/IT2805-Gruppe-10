@@ -16,16 +16,6 @@ body {
     background-color: #2D2D2D;
     height: 11vw;
     padding-bottom: 2%;
-    overflow: hidden;
-    
-}
-
-.content {
-    z-index: 2;
-}
-
-h1 {
-    color: red;
 }
 
 .menu_link {
@@ -136,6 +126,7 @@ footer {
     #menu {
         height: 130px;
         justify-content: space-between;
+        position: relative;
     }
     .wrapper {
         width: auto;
@@ -158,9 +149,9 @@ footer {
       }
     
       .dropdown {
-        position: absolute;
+        position: relative;
         display: inline-block;
-        left: 10px;
+        right: 300px;
         top: -12px;
       }
     
@@ -169,6 +160,7 @@ footer {
         position: absolute;
         background-color: transparent;
         min-width: 160px;
+        left: 0;
       }
 
       .dropdown_links {
