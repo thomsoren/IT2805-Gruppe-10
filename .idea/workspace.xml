@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1449adb0-05a7-49a7-ac24-38e8232e4cf1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P3/individualWatches.html" beforeDir="false" afterPath="$PROJECT_DIR$/P3/individualWatches.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P3/universal.js" beforeDir="false" afterPath="$PROJECT_DIR$/P3/universal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +35,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Henrik/Documents/intelij/Webtek/Project/IT2805-Gruppe-10",
+    "last_opened_file_path": "C:/Users/Henrik/Documents/intelij/Webtek/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -149,6 +150,7 @@
       <workItem from="1698047607703" duration="3741000" />
       <workItem from="1698309215543" duration="1811000" />
       <workItem from="1698311325258" duration="61000" />
+      <workItem from="1698660564706" duration="2130000" />
     </task>
     <servers />
   </component>
