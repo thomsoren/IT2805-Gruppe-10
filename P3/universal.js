@@ -1,5 +1,22 @@
 /*let footer = document.getElementById("footer")
 document.body.appendChild(footer.content);
+<<<<<<< HEAD
+
+document.addEventListener("DOMContentLoaded", function() {
+    loadComponent("header-placeholder", "header.html");
+    loadComponent("footer-placeholder", "footer.html");
+});
+
+function loadComponent(placeholderId, url) {
+    fetch(url).then(response => {
+        return response.text();
+    }).then(data => {
+        document.getElementById(placeholderId).innerHTML = data;
+    }).catch(error => {
+        console.error('Error loading component:', error);
+    });
+}
+=======
 //funksjon for å gjøre html om til en string.
 
 function createTemplate(html){
@@ -7,6 +24,7 @@ function createTemplate(html){
     template.innerHTML = html.trim();
     return template.content.firstChild;
 }
+<<<<<<< HEAD
 const Nav = createTemplate('<div id="menu">\n' +
     '        <img id="logo" src="img/logo.png" alt="logo"/>\n' +
     '        <button id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></button>\n' +
