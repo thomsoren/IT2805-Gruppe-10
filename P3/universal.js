@@ -51,4 +51,4 @@ const footer = `
       </div>
     </div>
   </footer>`
-  document.querySelector('#footer').innerHTML = hovedmeny
+  document.querySelector('#footer').innerHTML = footer
