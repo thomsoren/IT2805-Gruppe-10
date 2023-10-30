@@ -1,4 +1,4 @@
-const errormeny = `
+const meny = `
 <div id="menu">
         <img id="logo" src="img/logo.png" alt="logo"/>
         <button id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></button>
@@ -10,9 +10,9 @@ const errormeny = `
           <button class="menu_link">Contact</button>
 </div>
 `
-document.querySelector('#hode').innerHTML = errormeny
+document.querySelector('#hode').innerHTML = meny
 
-const errorfooter = `
+const footer = `
 <div class="flex-container">
       <div class="flex-box">
         <h1>Address & postal office</h1>
@@ -39,4 +39,4 @@ const errorfooter = `
       </div>
     </div>
 `
-document.querySelector('#feet').innerHTML = errorfooter
+document.querySelector('#feet').innerHTML = footer
