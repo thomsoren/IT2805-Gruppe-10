@@ -1,0 +1,28 @@
+Index: P3/universal.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <link rel=\"stylesheet\" href=\"universal.css\" />\r\n    <title>Document</title>\r\n    <style>\r\n      @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');\r\n      </style>      \r\n  </head>\r\n  <body>\r\n    <div class = \"wrapper\">\r\n    <nav>\r\n      <div id=\"menu\">\r\n        <img id=\"logo\" src=\"img/logo.png\" alt=\"logo\"/>\r\n        <button id=\"cart_button\"><img id=\"cart_img\"src=\"img/cart.png\" alt=\"cart\" ></button>\r\n        <div id=\"menu_div\">\r\n          <button class=\"menu_link\">Home</button>\r\n          <button class=\"menu_link\">Buy</button>\r\n          <button class=\"menu_link\">Sell</button>\r\n          <button class=\"menu_link\">About us</button>\r\n          <button class=\"menu_link\">Contact</button>\r\n        </div>\r\n    </nav>\r\n    <div class=\"Content\">\r\n      <h1>Test</h1>\r\n    </div>\r\n    </div>\r\n    <script src=\"universal.js\"></script>\r\n  </body>\r\n  <footer>\r\n    <div class=\"flex-container\">\r\n      <div class=\"flex-box\">\r\n        <h1>Address & postal office</h1>\r\n        <p>Klokkeveien 123 A</p>\r\n        <p>7052, Trondheim</p>\r\n        <p>Norway</p>\r\n      </div>\r\n      <div class=\"flex-box\">\r\n        <h1>Contact</h1>\r\n        <p><img src=\"img/telephonew.png\" alt=\"phone\" id=\"phone\"> +47 901 23 456</p>\r\n        <p id=\"emailtekst\"><img src=\"./img/Message.png\" alt=\"message\" id=\"message\">Somethingsomething@gmail.com</p>\r\n      </div>\r\n      <div class=\"flex-box\">\r\n        <h1>Sitemap</h1>\r\n          <button class=\"footer_link\">Home</button>\r\n          <br/>\r\n          <button class=\"footer_link\">Buy</button>\r\n          <br/>\r\n          <button class=\"footer_link\">Sell</button>\r\n          <br/>\r\n          <button class=\"footer_link\">About us</button>\r\n          <br/>\r\n          <button class=\"footer_link\">Contact</button>\r\n      </div>\r\n    </div>\r\n  </footer>\r\n</html>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/P3/universal.html b/P3/universal.html
+--- a/P3/universal.html	
++++ b/P3/universal.html	
+@@ -11,7 +11,7 @@
+   </head>
+   <body>
+     <div class = "wrapper">
+-    <nav>
++    <nav id="navbar">
+       <div id="menu">
+         <img id="logo" src="img/logo.png" alt="logo"/>
+         <button id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></button>
+@@ -29,7 +29,7 @@
+     </div>
+     <script src="universal.js"></script>
+   </body>
+-  <footer>
++  <footer id="footer">
+     <div class="flex-container">
+       <div class="flex-box">
+         <h1>Address & postal office</h1>
