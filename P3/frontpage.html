@@ -7,16 +7,31 @@
     <title>Frontpage</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Kanit:wght@600&display=swap');
+
       </style>      
   </head>
   <body>
       <div id="hovedmeny"></div>
-    <div class="Content">
-      <h1 id="Sorry">We're Sorry!</h1>
-      <p id="unavailable">This feature is currently unavailable</p>
+    <div class="container">
+      <!-- I use inline style here because I'm not going to reuse this style. -->
+      <h1 style="text-align: center; font-size: 3vw; font-family: Inter;">Your ultimate watch trading platform!</h1>
+      <h3 style="text-align: center; font-size: 2.5vw; font-family: Inter; font-weight: 600; margin-top: 10px;">What do you want to do?</h3>
+      <div id="frontpage_buttons_div">
+        <button id="frontpage_button" style="background-color: #4A4E69;">Buy</button>
+        <button id="frontpage_button" style="background-color: #9A8C98;">Sell</button>
+      </div>
+      <div>
+        <h1 id="frontpage_h1">Browse our featured watches</h1>
+        <div class="watchbox">
+          <img src="img/omega_aquaterra.png" alt="omega_aquaterra" class="frontpage_watches">
+          <div class="second_watchbox">
+            <h4 class="frontpage_klokke_overskrift">omega Aquaterra</h4>
+            <h4 class="frontpage_klokke_overskrift">2022 Modell</h4>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    
   </body>
   <footer>
     <div id="footer"></div>
