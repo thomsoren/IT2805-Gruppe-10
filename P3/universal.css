@@ -4,6 +4,12 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .dropdown {
     display: none;
 }
@@ -60,12 +66,11 @@ body {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: auto;   
-    height: auto;
     background-color: #2D2D2D;
     line-height: 100px;
     color: #F2E9E4;
@@ -133,12 +138,14 @@ footer {
     }
 
     .dropbtn {
+        position: relative;
         background-color: #2D2D2D;
         color: white;
-        padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
+        transition: 0.15s;
+        top: 10px;
       }
 
       #burger_bar {
@@ -155,11 +162,13 @@ footer {
       }
     
       .content {
-        display: none;
+        /* display: none; */
         position: absolute;
-        background-color: transparent;
         min-width: 160px;
         left: 0;
+        opacity: 0;
+        max-height: 0;
+        transition: opacity 0.2s, max-height 0.3s;
       }
 
       .dropdown_links {
@@ -175,12 +184,19 @@ footer {
         text-align: center;
       }
 
-      .dropdown:hover .content {display: block;}
+      .dropdown:hover .content {
+        opacity: 1;
+        max-height: auto;
+    }
       
       /* Change the background color of the dropdown button when the dropdown content is shown */
       .dropdown:hover .dropbtn {
         transform: scale(1.2);
-        transition: 0.15s;
+        transition: 1s;
+    }
+
+    .dropdown_links:hover {
+        transform: scale(1.03);
     }
 
     #logo {
@@ -227,4 +243,77 @@ footer {
 }
 #safety {
     width: 200px;
+}
+
+#frontpage_buttons_div {
+    text-align: center;
+}
+
+.container {
+    background-color:#F1f1f1;
+}
+
+#frontpage_button {
+    color: black;
+    padding: 2% 4%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
+    font-family: Inter;
+    font-size: 3vw;
+    color: white;
+    transition: 0.15s;
+}
+
+#frontpage_button:hover {
+    transform: scale(1.13);
+    transition: 0.5s;
+}
+
+#frontpage_h1 {
+    text-align: center; 
+    font-size: 3vw; 
+    font-family: Inter;
+    font-weight: 300; 
+    position: relative; 
+    top: 30px; 
+}
+
+.watchbox {
+    position: relative;
+    background-color: transparent;
+    width: 32.71vw;
+    height: 51.20vh;
+    left: 40px;
+    top: 20px;
+    border-radius: 5%;
+    border: 5px solid #D9D9D9;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.frontpage_watches {
+    position: relative;
+    height: 90%;
+    object-fit: cover;
+    width: 50%;
+    height: 23vw;
+    bottom: 20px;
+}
+
+.frontpage_klokke_overskrift {
+    position: relative;
+    font-size: 20px; 
+    font-family: Inter;
+    font-weight: 300; 
+    top: 30px;
+    right: 20px;
+}
+
+.second_watchbox {
+    width: 100%;
+    text-align: center;
+
 }
