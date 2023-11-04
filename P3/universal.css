@@ -168,7 +168,7 @@ footer {
 }
 
 
-#Contactinformation{
+#Contactinformation{ /* Div'en til formet */
 
    
 
@@ -182,7 +182,7 @@ footer {
 
 }
 
-.Contactinformation{
+.Contactinformation{ /* Input boksene */
 
     position: relative;
     margin-top: 20px;
@@ -194,7 +194,7 @@ footer {
     
 }
 
-.Contactlabel{
+.Contactlabel{ /* Form labels */ /* Til neste gang, finn ut hvordan man resizer boksene */
 
    
     position: relative;
