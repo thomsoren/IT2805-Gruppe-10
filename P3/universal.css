@@ -273,7 +273,7 @@ footer {
 }
 
 .container {
-    background-color:#F1f1f1;
+    background-color: #F1F1F1;
 }
 
 #frontpage_button {
@@ -307,36 +307,161 @@ footer {
 .watchbox {
     position: relative;
     background-color: transparent;
-    width: 32.71vw;
-    height: 51.20vh;
-    left: 40px;
-    top: 20px;
+    width: 45vw;
+    height: 30vw;
+    left: 3vw;
+    top: 5vh;
     border-radius: 5%;
     border: 5px solid #D9D9D9;
     margin-bottom: 50px;
     display: flex;
 }
 
-.frontpage_watches {
+.second_watchbox {
     position: relative;
-    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.frontpage_watch_picture {
+    position: relative;
     object-fit: cover;
-    width: 50%;
-    height: 23vw;
+    width: 40%;
+    height: 30vw;
     bottom: 20px;
 }
 
-.frontpage_klokke_overskrift {
-    position: relative;
-    font-size: 20px; 
-    font-family: Inter;
-    font-weight: 300; 
-    top: 30px;
-    right: 20px;
+#rolex_img {
+    height: 35vw;
 }
 
-.second_watchbox {
-    width: 100%;
-    text-align: center;
+.frontpage_klokke_overskrift {
+    font-size: 2vw; 
+    font-family: Inter;
+    font-weight: 300; 
+    top: 2vh;
+    right: 2vw;
+}
 
+#frontpage_klokkenavn {
+    font-weight: 500;
+}
+
+.frontpage_description_text {
+    font-family: Inter;
+    font-size: 1.2vw; 
+    width: 80%;
+    top: 2vw;
+    margin: 0 auto;
+}
+
+.frontpage_price {
+    font-family: Inter; 
+    font-size: 1.2vw; 
+    top: 1vh; 
+}
+
+.frontpage_view_more_button {
+    font-family: inter;
+    font-size: 1vw;
+}
+
+.frontpage_view_more_button:hover {
+    transform: scale(1.02);
+}
+
+.frontpage_watchbox_2 {
+        position: relative;
+        background-color: transparent;
+        width: 45vw;
+        height: 30vw;
+        left: 50vw;
+        top: 5vh;
+        border-radius: 5%;
+        border: 5px solid #D9D9D9;
+        margin-bottom: 50px;
+        display: flex;
+}
+
+@media (max-width: 768px) {
+    .watchbox {
+        position: relative;
+        background-color: transparent;
+        width: 90vw;
+        height: 50vw;
+        left: 3vw;
+        top: 5vh;
+        border-radius: 5%;
+        border: 5px solid #D9D9D9;
+        margin-bottom: 50px;
+        display: flex;
+    }
+    
+    .second_watchbox {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .frontpage_watch_picture {
+        object-fit: cover;
+        width: 40%;
+        height: 100%;
+        bottom: 10px;
+    }
+    
+    .frontpage_klokke_overskrift {
+        font-family: Inter;
+        font-weight: 300; 
+        right: 2vw;
+    }
+
+    #frontpage_klokkenavn {
+        font-size: 4vw; 
+        font-weight: 500; 
+        margin-top: 4vw;
+        top: 2vh;
+        margin-bottom: 0;
+    }
+
+    #frontpage_årsmodell {
+        font-size: 3vw; 
+        margin-top: 1.5vw;
+        margin-bottom: 5vw;
+    }
+
+    .frontpage_price {
+        top: 1vh; 
+        font-size: 2vw;
+    }
+
+    .frontpage_description_text {
+        font-family: Inter;
+        font-size: 2.3vw; 
+        width: 80%;
+        top: 2vw;
+        margin: 0 auto;
+    } 
+
+    .frontpage_read_more {
+        font-family: inter;
+        font-size: 2vw;
+    }
+
+    .frontpage_watchbox_2 {
+        position: relative;
+        background-color: transparent;
+        width: 90vw;
+        height: 50vw;
+        left: 3vw;
+        top: 5vh;
+        border-radius: 5%;
+        border: 5px solid #D9D9D9;
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    #rolex_img {
+        height: 110%;
+    }
 }
