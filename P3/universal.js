@@ -1,4 +1,4 @@
-const hovedmeny = `
+const meny = `
 <div id="menu">
         <img id="logo" src="img/logo.png" alt="logo"/>
         <button id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></button>
@@ -21,11 +21,10 @@ const hovedmeny = `
         </div>
     </div>
 `
-document.querySelector('#hovedmeny').innerHTML = hovedmeny
+document.querySelector('#hovedmeny').innerHTML = meny
 
 const footer = `
-<footer>
-    <div class="flex-container">
+<div class="flex-container">
       <div class="flex-box">
         <h1>Address & postal office</h1>
         <p>Klokkeveien 123 A</p>
@@ -51,4 +50,4 @@ const footer = `
       </div>
     </div>
   </footer>`
-  document.querySelector('#footer').innerHTML = hovedmeny
+  document.querySelector('#footer').innerHTML = footer
