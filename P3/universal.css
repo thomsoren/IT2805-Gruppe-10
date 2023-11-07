@@ -463,11 +463,17 @@ footer {
     
 }
 
-#Contactbutton{
+#Contactbutton{ /* Submit knapp nederst i divven */
 
     position: absolute;
     bottom: 10;
     right: 0;
+    border: transparent;
+    background-color: #4A4E69;
+    border-radius: 5px;
+    color: white;
+    height: 5%;
+    width: 20%;
 
 }
 
