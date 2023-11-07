@@ -185,20 +185,48 @@ footer {
 .Contactinformation{ /* Input boksene */
 
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
     display: block;
-    border-radius: 3px;
+    border-radius: 7px;
+    border-color: transparent;
     width: 25vw;
     background-color: #D9D9D9;
+    height: 2vh;
+    
     
 }
 
-.Contactlabel{ /* Form labels */ /* Til neste gang, finn ut hvordan man resizer boksene */
+#Contactheader{
 
-   
-    position: relative;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+#ContactMessage{
+
+    height: 200px;
+    vertical-align: top;
+    resize: none;
+}
+
+
+.Contactlabel{ /* Form labels */
+
     
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+#Contactbutton{
+
+    position: absolute;
+    bottom: 10;
+    right: 0;
+
 }
 
 
