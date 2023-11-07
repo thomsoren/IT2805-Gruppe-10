@@ -134,9 +134,72 @@ footer {
 }
 
 
-@media only screen and (max-width: 750px) {
-    body {
-      background-color: lightblue;
+@media (max-width: 768px) {
+    #menu {
+        height: 130px;
+        justify-content: space-between;
+        position: relative;
+    }
+    .wrapper {
+        width: auto;
+        height: 100%;
+    }
+
+    .dropbtn {
+        position: relative;
+        background-color: #2D2D2D;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: 0.15s;
+        top: 10px;
+      }
+
+      #burger_bar {
+        height: 50px;
+        background-color: #2D2D2D;
+        color: white;
+      }
+    
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        right: 40%;
+        top: -12px;
+      }
+    
+      .content {
+        /* display: none; */
+        position: absolute;
+        min-width: 160px;
+        left: 0;
+        opacity: 0;
+        max-height: 0;
+        transition: opacity 0.2s, max-height 0.3s;
+      }
+
+      .dropdown_links {
+        color: black;
+        background-color: #F1F1F1;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+        border: 2px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        margin-bottom: 1px;
+        text-align: center;
+      }
+
+      .dropdown:hover .content {
+        opacity: 1;
+    }
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+        transform: scale(1.2);
+        transition: 1s;
     }
 
     .dropdown_links:hover {
@@ -219,7 +282,7 @@ footer {
     background-color: #F1F1F1;
 }
 
-#frontpage_button {
+.frontpage_button {
     color: black;
     padding: 2% 4%;
     border: 2px solid black;
@@ -233,7 +296,7 @@ footer {
     transition: 0.15s;
 }
 
-#frontpage_button:hover {
+.frontpage_button:hover {
     transform: scale(1.13);
     transition: 0.5s;
 }
@@ -284,10 +347,6 @@ footer {
     font-weight: 300; 
     top: 2vh;
     right: 2vw;
-}
-
-#frontpage_klokkenavn {
-    font-weight: 500;
 }
 
 .frontpage_description_text {
@@ -357,6 +416,9 @@ footer {
         font-family: Inter;
         font-weight: 300; 
         right: 2vw;
+        font-size: 3vw; 
+        margin-top: 1.5vw;
+        margin-bottom: 5vw;
     }
 
     #frontpage_klokkenavn {
@@ -365,12 +427,6 @@ footer {
         margin-top: 4vw;
         top: 2vh;
         margin-bottom: 0;
-    }
-
-    #frontpage_årsmodell {
-        font-size: 3vw; 
-        margin-top: 1.5vw;
-        margin-bottom: 5vw;
     }
 
     .frontpage_price {
