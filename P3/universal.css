@@ -414,10 +414,12 @@ footer {
 
    
 
-    display: flexbox;
+    display: flex;
     position: absolute;
     text-align: left;
     left: 5%;
+    height: auto;
+    margin: 20px;
     
 
 
@@ -434,7 +436,7 @@ footer {
     border-color: transparent;
     width: 25vw;
     background-color: #D9D9D9;
-    height: 2vh;
+    height: 2vw;
     
     
 }
@@ -466,7 +468,7 @@ footer {
 #Contactbutton{ /* Submit knapp nederst i divven */
 
     position: absolute;
-    bottom: 10;
+    bottom: 0;
     right: 0;
     border: transparent;
     background-color: #4A4E69;
@@ -474,6 +476,7 @@ footer {
     color: white;
     height: 5%;
     width: 20%;
+    
 
 }
 
