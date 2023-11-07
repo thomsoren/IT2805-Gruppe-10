@@ -1,20 +1,29 @@
+
 body {
-    margin: 0px;
     background-color: #F1F1F1;
+    height:100%;
+    margin: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dropdown {
+    display: none;
+}
+  
 #menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: #2D2D2D;
     height: 11vw;
-    padding-bottom: 1%;
-    margin-top: -1%;
-    overflow: hidden;
+    padding-bottom: 2%;
 }
-  
+
 .menu_link {
     position: relative;
     bottom: 1.2vw;
@@ -27,6 +36,7 @@ body {
     border: none;
     cursor: pointer;
     transition: 0.15s;
+    font-family: "Inter300";
 }
 
 .menu_link:hover, #cart_button:hover, .footer_link:hover {
@@ -57,19 +67,15 @@ body {
 }
 
 footer {
-    margin: auto;   
-    bottom: -100px; 
-    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: #2D2D2D;
     line-height: 100px;
     color: #F2E9E4;
 }
-
-.wrapper {    
-    min-height: calc(100vh);
-    margin: auto;
-    padding-bottom: auto;
-  }
   
 .footer_link {
     background-color: #2D2D2D;
@@ -105,7 +111,6 @@ footer {
 } 
 
 #phone{
-
     top: -50%;
     
     width: 15px;
@@ -115,7 +120,6 @@ footer {
 }
 
 #message{
-    
     top: -50%;
     bottom: -5px;
     right: 5px;
@@ -123,30 +127,10 @@ footer {
     height: auto;
     overflow: hidden;
     position: relative;
-    
-    
 }
 
 #emailtekst{
     height: fit-content;
-}
-
-#Sorry{
-
-    font-family: "Kanit", "sans-serif";
-    margin: auto;
-    margin-top: 15%;
-    text-align: center;
-    
-    width: 50%;
-    height: 50%;
-}
-
-#unavailable{
-    font-family:  "sans-serif";
-    
-    text-align: center;
-
 }
 
 
@@ -154,17 +138,275 @@ footer {
     body {
       background-color: lightblue;
     }
-    .footer_link {
-        font-size: 25px;
+
+    .dropdown_links:hover {
+        transform: scale(1.03);
     }
-    .flex-box {
+
+    #logo {
+        height: 7em;
+        position: absolute;
+    }
+
+    #cart_img {
+        height: 50px;
+        width: 50px;
+        display: flex;
+    }
+
+    #menu_div {
+        display: none;
+    }
+
+    .footer_link {
         font-size: 15px;
     }
-    .footer_link:hover {
-        color: #F2E9E4;
-        text-decoration: underline;
-        font-size: 30px;
-  }
+    .flex-box {
+        font-size: 12px;
+    }
+
+    .flex-box > h1 {
+        font-size: 15px;    
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+.bbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#bbox1, #bbox2, #bbox3, #bbox4, #bbox5, #bbox6 {
+    width: 311px;
+    height: 359px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10%;
+    background-color: rgb(173, 177, 177);
+    text-align: center;
+    flex-basis: calc(33.333% -10px);  
+}
+
+#bbbox1 {
+    align-self: flex-end;
+    padding-top: 1px;
+}
+#about {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto !important;
+    float: none !important;
+    border: 0.5rem solid;
+    border-color:#2D2D2D;
+    font-size: large;
+    border-radius: 10%;
+}
+#ab1 {
+    width: 600px;
+}
+#safety {
+    width: 200px;
+}
+
+#frontpage_buttons_div {
+    text-align: center;
+}
+
+.container {
+    background-color: #F1F1F1;
+}
+
+#frontpage_button {
+    color: black;
+    padding: 2% 4%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
+    font-family: Inter;
+    font-size: 3vw;
+    color: white;
+    transition: 0.15s;
+}
+
+#frontpage_button:hover {
+    transform: scale(1.13);
+    transition: 0.5s;
+}
+
+#frontpage_h1 {
+    text-align: center; 
+    font-size: 3vw; 
+    font-family: Inter;
+    font-weight: 300; 
+    position: relative; 
+    top: 30px; 
+}
+
+.watchbox {
+    position: relative;
+    background-color: transparent;
+    width: 45vw;
+    height: 30vw;
+    left: 3vw;
+    top: 5vh;
+    border-radius: 5%;
+    border: 5px solid #D9D9D9;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.second_watchbox {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.frontpage_watch_picture {
+    position: relative;
+    object-fit: cover;
+    width: 40%;
+    height: 30vw;
+    bottom: 20px;
+}
+
+#rolex_img {
+    height: 35vw;
+}
+
+.frontpage_klokke_overskrift {
+    font-size: 2vw; 
+    font-family: Inter;
+    font-weight: 300; 
+    top: 2vh;
+    right: 2vw;
+}
+
+#frontpage_klokkenavn {
+    font-weight: 500;
+}
+
+.frontpage_description_text {
+    font-family: Inter;
+    font-size: 1.2vw; 
+    width: 80%;
+    top: 2vw;
+    margin: 0 auto;
+}
+
+.frontpage_price {
+    font-family: Inter; 
+    font-size: 1.2vw; 
+    top: 1vh; 
+}
+
+.frontpage_view_more_button {
+    font-family: inter;
+    font-size: 1vw;
+}
+
+.frontpage_view_more_button:hover {
+    transform: scale(1.02);
+}
+
+.frontpage_watchbox_2 {
+        position: relative;
+        background-color: transparent;
+        width: 45vw;
+        height: 30vw;
+        left: 50vw;
+        top: 5vh;
+        border-radius: 5%;
+        border: 5px solid #D9D9D9;
+        margin-bottom: 50px;
+        display: flex;
+}
+
+@media (max-width: 768px) {
+    .watchbox {
+        position: relative;
+        background-color: transparent;
+        width: 90vw;
+        height: 50vw;
+        left: 3vw;
+        top: 5vh;
+        border-radius: 5%;
+        border: 5px solid #D9D9D9;
+        margin-bottom: 50px;
+        display: flex;
+    }
+    
+    .second_watchbox {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .frontpage_watch_picture {
+        object-fit: cover;
+        width: 40%;
+        height: 100%;
+        bottom: 10px;
+    }
+    
+    .frontpage_klokke_overskrift {
+        font-family: Inter;
+        font-weight: 300; 
+        right: 2vw;
+    }
+
+    #frontpage_klokkenavn {
+        font-size: 4vw; 
+        font-weight: 500; 
+        margin-top: 4vw;
+        top: 2vh;
+        margin-bottom: 0;
+    }
+
+    #frontpage_årsmodell {
+        font-size: 3vw; 
+        margin-top: 1.5vw;
+        margin-bottom: 5vw;
+    }
+
+    .frontpage_price {
+        top: 1vh; 
+        font-size: 2vw;
+    }
+
+    .frontpage_description_text {
+        font-family: Inter;
+        font-size: 2.3vw; 
+        width: 80%;
+        top: 2vw;
+        margin: 0 auto;
+    } 
+
+    .frontpage_read_more {
+        font-family: inter;
+        font-size: 2vw;
+    }
+
+    .frontpage_watchbox_2 {
+        position: relative;
+        background-color: transparent;
+        width: 90vw;
+        height: 50vw;
+        left: 3vw;
+        top: 5vh;
+        border-radius: 5%;
+        border: 5px solid #D9D9D9;
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    #rolex_img {
+        height: 110%;
+    }
 }
 
 
