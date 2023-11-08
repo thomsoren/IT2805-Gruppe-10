@@ -187,7 +187,6 @@ footer {
 
       .dropdown:hover .content {
         opacity: 1;
-        max-height: auto;
     }
       
       /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -276,7 +275,7 @@ footer {
     background-color: #F1F1F1;
 }
 
-#frontpage_button {
+.frontpage_button {
     color: black;
     padding: 2% 4%;
     border: 2px solid black;
@@ -290,7 +289,7 @@ footer {
     transition: 0.15s;
 }
 
-#frontpage_button:hover {
+.frontpage_button:hover {
     transform: scale(1.13);
     transition: 0.5s;
 }
@@ -341,10 +340,6 @@ footer {
     font-weight: 300; 
     top: 2vh;
     right: 2vw;
-}
-
-#frontpage_klokkenavn {
-    font-weight: 500;
 }
 
 .frontpage_description_text {
@@ -414,6 +409,9 @@ footer {
         font-family: Inter;
         font-weight: 300; 
         right: 2vw;
+        font-size: 3vw; 
+        margin-top: 1.5vw;
+        margin-bottom: 5vw;
     }
 
     #frontpage_klokkenavn {
@@ -422,12 +420,6 @@ footer {
         margin-top: 4vw;
         top: 2vh;
         margin-bottom: 0;
-    }
-
-    #frontpage_årsmodell {
-        font-size: 3vw; 
-        margin-top: 1.5vw;
-        margin-bottom: 5vw;
     }
 
     .frontpage_price {
