@@ -24,6 +24,7 @@ const meny = `
 document.querySelector('#hovedmeny').innerHTML = meny
 
 const footer = `
+<footer>
 <div class="flex-container">
       <div class="flex-box">
         <h1>Address & postal office</h1>
