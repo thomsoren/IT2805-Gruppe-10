@@ -25,19 +25,19 @@ body {
 }
 
 .menu_link {
-    position: relative;
-    bottom: 1.2vw;
-    background-color: transparent;
-    color: #F1F1F1;
     text-align: center;
     padding-top: 2vw;
     font-size: 2vw;
-    width: 15vw;
-    border: none;
-    cursor: pointer;
-    transition: 0.15s;
+    color: #F1F1F1;
+    text-decoration: none; /* To remove the default underline for links */
     font-family: "Inter300";
+    display: inline-block; /* Change display property to make them display vertically */
+    transition: 0.15s;
+    width: 15vw;
+    bottom: 1.2vw;
+    position: relative;
 }
+
 
 .menu_link:hover, #cart_button:hover, .footer_link:hover {
     color: #F2E9E4;
@@ -88,6 +88,9 @@ footer {
     font-family: "Kanit", "sans-serif";
     cursor: pointer; 
     transition: 0.2s; 
+    display: inline-block;
+    text-decoration: none;
+    
 }
 
 .flex-container {
@@ -256,18 +259,20 @@ footer {
     border: 2px solid rgb(0, 0, 0);
     background-color: none;
     text-align: center;
+    text-decoration: none;
     
     
 }
-.bbox div h1 {
+.bbox a h1 {
     margin-top: 40px;
     margin-bottom: 0;
     font-size: 25px;
     display: inline-block;
     font-family: Inter;
     text-align: center;
+    color: #2D2D2D;
 }
-.bbox div p {
+.bbox a p {
     margin: 10px;
     font-size: 20px;
     color: #2D2D2D;
@@ -275,7 +280,7 @@ footer {
 
 }
 
-.bbox div img {
+.bbox a img {
     height: 350px;
     position: relative;
     right: 15px;
