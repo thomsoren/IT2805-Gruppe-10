@@ -473,6 +473,7 @@ footer {
     display: flex;
     flex-flow: column wrap;
     height: auto;
+    font-family: 'Kanit', sans-serif;
 }
 
 .sellerInformation{
