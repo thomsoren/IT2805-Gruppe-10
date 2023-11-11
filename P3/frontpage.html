@@ -8,7 +8,6 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Kanit:wght@600&display=swap');
-
       </style>      
   </head>
   <body>
@@ -18,8 +17,8 @@
       <h1 style="text-align: center; font-size: 3vw; font-family: Inter;">Your ultimate watch trading platform!</h1>
       <h3 style="text-align: center; font-size: 2.5vw; font-family: Inter; font-weight: 600; margin-top: 10px;">What do you want to do?</h3>
       <div id="frontpage_buttons_div">
-        <button id="frontpage_button" style="background-color: #4A4E69;">Buy</button>
-        <button id="frontpage_button" style="background-color: #9A8C98;">Sell</button>
+        <button class="frontpage_button" style="background-color: #4A4E69;">Buy</button>
+        <button class="frontpage_button" style="background-color: #9A8C98;">Sell</button>
       </div>
       <div>
         <h1 id="frontpage_h1">Browse our featured watches</h1>
@@ -29,8 +28,8 @@
         <div class="watchbox">
           <img src="img/omega_aquaterra.png" alt="omega_aquaterra" class="frontpage_watch_picture">
           <div class="second_watchbox">
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_klokkenavn">Omega Seamaster Aquaterra</h4>
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_årsmodell">2022 Modell</h4>
+            <h4 class="frontpage_klokke_overskrift" style="font-weight: 500;">Omega Seamaster Aquaterra</h4>
+            <h4 class="frontpage_klokke_overskrift">2022 Modell</h4>
             <div style="text-align: center;">
             <p class="frontpage_description_text">This is the Omega Seamaster Aqua Terra, one of the most iconic timepieces produced by the Swiss luxury watchmaker Omega SA.</p>
           </div>
@@ -42,8 +41,8 @@
       <div class="frontpage_watchbox_2">
           
           <div class="second_watchbox">
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_klokkenavn">Breitling Superocean</h4>
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_årsmodell">2021 Modell</h4>
+            <h4 class="frontpage_klokke_overskrift" style="font-weight: 500;">Breitling Superocean</h4>
+            <h4 class="frontpage_klokke_overskrift">2021 Modell</h4>
             <div style="text-align: center;">
             <p class="frontpage_description_text">Dive into the depths with confidence with the Breitling Superocean.  
               the Superocean combines state-of-the-art technology with a sleek and timeless design.</p>
@@ -57,24 +56,24 @@
         <div class="watchbox">
           <img src="img/rolex_gmt.png" alt="omega_aquaterra" class="frontpage_watch_picture" id="rolex_img">
           <div class="second_watchbox">
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_klokkenavn" style="margin-bottom: 1vw;">Rolex GMT-Master II</h4>
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_årsmodell" >2019 Modell</h4>
+            <h4 class="frontpage_klokke_overskrift" style="font-weight: 500; margin-bottom: 1vw;">Rolex GMT-Master II</h4>
+            <h4 class="frontpage_klokke_overskrift">2019 Modell</h4>
             <div style="text-align: center;">
             <p class="frontpage_description_text">Master time across time zones with the Rolex GMT-Master II. This watch is an indispensable tool for globe-trotters, with its instantly recognizable two-tone bezel and precise timekeeping.</p>
           </div>
-            <h5 class="frontpage_price">price: 55 000,-kr</h5>
+            <h5 class="frontpage_price">price: 160 000,-kr</h5>
             <button class="frontpage_view_more_button">View more</button>
           </div>
         </div>
 
         <div class="frontpage_watchbox_2">
           <div class="second_watchbox">
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_klokkenavn" style="margin-bottom: 1vw;">Omega Seamaster Diver</h4>
-            <h4 class="frontpage_klokke_overskrift" id="frontpage_årsmodell" style="margin-top: 1.4vw; margin-bottom: 1.4vw;">2022 Modell</h4>
+            <h4 class="frontpage_klokke_overskrift" style="font-weight: 500; margin-bottom: 1vw;">Omega Seamaster Diver</h4>
+            <h4 class="frontpage_klokke_overskrift" style="margin-top: 1.4vw; margin-bottom: 1.4vw;">2022 Modell</h4>
             <div style="text-align: center;">
             <p class="frontpage_description_text">The Omega Seamaster Diver is a testament to marine legacy and watchmaking innovation. Designed for the depths, its performance is matched by the classic elegance that makes it a favorite both under the sea and on land.</p>
           </div>
-            <h5 class="frontpage_price">price: 55 000,-kr</h5>
+            <h5 class="frontpage_price">price: 50 000,-kr</h5>
             <button class="frontpage_view_more_button">View more</button>
           </div>
           <img src="img/omega_seamaster.png" alt="omega_aquaterra" class="frontpage_watch_picture">
@@ -82,7 +81,6 @@
 
         </div>
       </div>
-  </body>
   <footer>
     <div id="footer"></div>
   </footer>

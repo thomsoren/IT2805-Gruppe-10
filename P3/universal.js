@@ -5,26 +5,27 @@ const meny = `
         <div class="dropdown">
           <button class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></button>
           <div class="content">
-          <a href="#" class="dropdown_links">Home</a>
-          <a href="#" class="dropdown_links">Buy</a>
-          <a href="#" class="dropdown_links">Sell</a>
-          <a href="#" class="dropdown_links">About us</a>
-          <a href="#" class="dropdown_links">Contact</a>
+          <a href="./frontpage.html" class="dropdown_links">Home</a>
+          <a href="./buy.html" class="dropdown_links">Buy</a>
+          <a href="./sell.html" class="dropdown_links">Sell</a>
+          <a href="./about.html" class="dropdown_links">About us</a>
+          <a href="./contact.html" class="dropdown_links">Contact</a>
         </div>
         </div>
         <div id="menu_div">
-          <button class="menu_link">Home</button>
-          <button class="menu_link">Buy</button>
-          <button class="menu_link">Sell</button>
-          <button class="menu_link">About us</button>
-          <button class="menu_link">Contact</button>
+          <a href="./frontpage.html" class="menu_link">Home</a>
+          <a href="./buy.html" class="menu_link">Buy</a>
+          <a href="./sell.html" class="menu_link">Sell</a>
+          <a href="./about.html" class="menu_link">About us</a>
+          <a href="./contact.html" class="menu_link">Contact</a>
         </div>
     </div>
 `
 document.querySelector('#hovedmeny').innerHTML = meny
 
 const footer = `
-<div class="flex-container">
+<footer>
+  <div class="flex-container">
       <div class="flex-box">
         <h1>Address & postal office</h1>
         <p>Klokkeveien 123 A</p>
@@ -38,15 +39,15 @@ const footer = `
       </div>
       <div class="flex-box">
         <h1>Sitemap</h1>
-          <button class="footer_link">Home</button>
+          <a href="./frontpage.html" class="footer_link">Home</a>
           <br/>
-          <button class="footer_link">Buy</button>
+          <a href="./buy.html" class="footer_link">Buy</a>
           <br/>
-          <button class="footer_link">Sell</button>
+          <a href="./sell.html" class="footer_link">Sell</a>
           <br/>
-          <button class="footer_link">About us</button>
+          <a href="./about.html" class="footer_link">About us</a>
           <br/>
-          <button class="footer_link">Contact</button>
+          <a href="./contact.html" class="footer_link">Contact</a>
       </div>
     </div>
   </footer>`

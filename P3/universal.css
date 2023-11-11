@@ -25,19 +25,19 @@ body {
 }
 
 .menu_link {
-    position: relative;
-    bottom: 1.2vw;
-    background-color: transparent;
-    color: #F1F1F1;
     text-align: center;
     padding-top: 2vw;
     font-size: 2vw;
-    width: 15vw;
-    border: none;
-    cursor: pointer;
-    transition: 0.15s;
+    color: #F1F1F1;
+    text-decoration: none; /* To remove the default underline for links */
     font-family: "Inter300";
+    display: inline-block; /* Change display property to make them display vertically */
+    transition: 0.15s;
+    width: 15vw;
+    bottom: 1.2vw;
+    position: relative;
 }
+
 
 .menu_link:hover, #cart_button:hover, .footer_link:hover {
     color: #F2E9E4;
@@ -89,6 +89,9 @@ footer {
     font-family: "Kanit", "sans-serif";
     cursor: pointer; 
     transition: 0.2s; 
+    display: inline-block;
+    text-decoration: none;
+    
 }
 
 .flex-container {
@@ -188,7 +191,6 @@ footer {
 
       .dropdown:hover .content {
         opacity: 1;
-        max-height: auto;
     }
       
       /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -231,27 +233,65 @@ footer {
 @media (min-width: 481px) and (max-width: 768px) {
 }
 
+
+#buyheader {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Inter;
+    color: #2D2D2D;
+}
+
 .bbox{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 80px;
 }
+
 
 #bbox1, #bbox2, #bbox3, #bbox4, #bbox5, #bbox6 {
     width: 311px;
     height: 359px;
     padding: 20px;
-    margin: 50px;
+    margin: 60px;
+    margin-bottom: 80px;
     border-radius: 10%;
-    background-color: rgb(173, 177, 177);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: none;
     text-align: center;
-    flex-basis: calc(33.333% -10px);  
+    text-decoration: none;
+    
+    
+}
+.bbox a h1 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 25px;
+    display: inline-block;
+    font-family: Inter;
+    text-align: center;
+    color: #2D2D2D;
+}
+.bbox a p {
+    margin: 10px;
+    font-size: 20px;
+    color: #2D2D2D;
+    font-family: Inter;
+
 }
 
-#bbbox1 {
-    align-self: flex-end;
-    padding-top: 1px;
+.bbox a img {
+    height: 350px;
+    position: relative;
+    right: 15px;
 }
+
+
+
+
+
+
 #about {
     text-align: center;
     max-width: 700px;
@@ -277,7 +317,7 @@ footer {
     background-color: #F1F1F1;
 }
 
-#frontpage_button {
+.frontpage_button {
     color: black;
     padding: 2% 4%;
     border: 2px solid black;
@@ -291,7 +331,7 @@ footer {
     transition: 0.15s;
 }
 
-#frontpage_button:hover {
+.frontpage_button:hover {
     transform: scale(1.13);
     transition: 0.5s;
 }
@@ -342,10 +382,6 @@ footer {
     font-weight: 300; 
     top: 2vh;
     right: 2vw;
-}
-
-#frontpage_klokkenavn {
-    font-weight: 500;
 }
 
 .frontpage_description_text {
@@ -415,6 +451,9 @@ footer {
         font-family: Inter;
         font-weight: 300; 
         right: 2vw;
+        font-size: 3vw; 
+        margin-top: 1.5vw;
+        margin-bottom: 5vw;
     }
 
     #frontpage_klokkenavn {
@@ -423,12 +462,6 @@ footer {
         margin-top: 4vw;
         top: 2vh;
         margin-bottom: 0;
-    }
-
-    #frontpage_årsmodell {
-        font-size: 3vw; 
-        margin-top: 1.5vw;
-        margin-bottom: 5vw;
     }
 
     .frontpage_price {
