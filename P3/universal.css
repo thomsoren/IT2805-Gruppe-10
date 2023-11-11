@@ -471,7 +471,7 @@ footer {
     margin:40px auto 40px auto;
     width: 400px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     height: auto;
 }
 

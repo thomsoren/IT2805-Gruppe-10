@@ -17,7 +17,7 @@
   <nav>
     <div id="hovedmeny"></div>
   </nav>
-  
+    
     <form action="error.html">
       <div id="sellerForm">
       <label for="name" class="sellerLabel">Name of watch</label>
@@ -35,13 +35,13 @@
       </select>
 
       <label for="description" class="sellerLabel">Description</label>
-      <input type="text" name="description" id="description" class="sellerInformation" required>
-
+      
+      <textarea name="description" id="description" wrap="soft" class="sellerInformation" style="height: 100px; resize: vertical;" required></textarea>
       <label for="price" class="sellerLabel">Desired price</label>
       <input name="price" id="price" class="sellerInformation" pattern="[0-9,]+" required>
 
       <label for="picture" class="sellerLabel">Add picture</label>
-      <input type="file" name="picture" id="picture" class="sellerInformation" required style="padding: 5px 0 0 5px; width: 200px;">
+      <input type="file" multiple="multiple" name="picture" id="picture" class="sellerInformation" required style="padding: 5px 0 0 5px; width: 100px">
 
       <label for="address" class="sellerLabel">Address</label>
       <input name="address" id="address" class="sellerInformation" required>
