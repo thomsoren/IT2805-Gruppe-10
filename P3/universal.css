@@ -548,11 +548,11 @@ footer {
     border-radius: 15px;
     position: relative;
     width: 40%;
-    max-width: fit-content;
     height: fit-content;
     left: 10%;
     top: 20vh;
     font-family: 'Inter', sans-serif;
+    display: inline-block;
     
     
     
@@ -564,24 +564,25 @@ footer {
 
     display: inline-block;
     margin-left: 10%;
-    
     color: white;
     width: fit-content;
+    
 
 }
 
-#contactcontact{
+#contactcontact{ /* Divven til Contact boks*/
 
+    position: relative;
     display: inline-block;
     margin-left: 10%;
-    width: 90%;
     color: white;
+    width: fit-content;
     
-    
+    top: 5px;
     
 }
 
-#contactmessage{
+#contactmessage{ /* Eposten */
     top: -50%;
     bottom: -5px;
     right: 3px;
@@ -589,6 +590,14 @@ footer {
     height: auto;
     overflow: hidden;
     position: relative;
+    
+}
+#contactcontact h1{
+
+   position: relative;
+   top: -6vh;
+   
+
 }
 
 #contactemail{
@@ -596,6 +605,8 @@ footer {
     width: 100%;
     overflow-y:hidden;
 }
+
+
 
 @media (max-width: 768px){
 
@@ -693,7 +704,14 @@ footer {
         
         
         
-    }}
+    }
+    #contactcontact h1{
+
+        position: relative;
+        top: auto;
+        
+     
+     }}
     
 #Sorry{
 
