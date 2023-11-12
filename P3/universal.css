@@ -693,4 +693,22 @@ footer {
         
         
         
-    }
+    }}
+    
+#Sorry{
+
+    font-family: "Kanit", "sans-serif";
+    text-align: center;
+    top: 20vh;
+    position: relative;
+    
+}
+
+#unavailable{
+    top: 20vh;
+    position: relative;
+    font-family: "Kanit", "sans-serif";
+    font-weight: 1000;
+    text-align: center;
+
+}
