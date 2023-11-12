@@ -530,8 +530,9 @@ footer {
     border-radius: 5px;
     color: white;
     height: 5%;
-    width: 20%;
+    display: inline-block;
     font-size: inherit;
+    font-size: fit-content;
     
 }
 
@@ -546,11 +547,13 @@ footer {
     background-color: #4A4E69;
     border-radius: 15px;
     position: relative;
-    width: 80vh;
+    width: 40%;
+    max-width: fit-content;
     height: fit-content;
     left: 10%;
-    top: 30vh;
+    top: 20vh;
     font-family: 'Inter', sans-serif;
+    
     
     
     
@@ -561,8 +564,133 @@ footer {
 
     display: inline-block;
     margin-left: 10%;
-    margin-right: 10%;
+    
     color: white;
     width: fit-content;
 
 }
+
+#contactcontact{
+
+    display: inline-block;
+    margin-left: 10%;
+    width: 90%;
+    color: white;
+    
+    
+    
+}
+
+#contactmessage{
+    top: -50%;
+    bottom: -5px;
+    right: 3px;
+    width: 20px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#contactemail{
+    height: fit-content;
+    width: 100%;
+    overflow-y:hidden;
+}
+
+@media (max-width: 768px){
+
+    #Contactinformation{ /* Div'en til formet */
+
+    
+        position: relative;
+        text-align: left;
+        left: 5%;
+        height: 10%;
+        width: 40%;
+        margin: 20px;
+        display: block;
+        
+    }
+    #contactbox{ /* Infoboksen til høyre for formet */
+
+        background-color: #4A4E69;
+        border-radius: 15px;
+        position: relative;
+        width: 40%;
+        max-width: fit-content;
+        height: fit-content;
+        left: 10%;
+        top: 20vh;
+        font-family: 'Inter', sans-serif;
+        
+        
+        
+        
+    }
+    #contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
+
+        display: flex;
+        display: inline-block;
+    }
+
+    #Contactinformation{ /* Div'en til formet */
+
+    
+        position: relative;
+        text-align: left;
+        left: 5%;
+        height: 10%;
+        width: 80%;
+        margin: 20px;
+        
+    }
+
+    .Contactinformation{ /* Input boksene */
+
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        display: block;
+        border-radius: 7px;
+        border-color: transparent;
+        width: 80vw;
+        background-color: #D9D9D9;
+        height: 2vw;
+        max-width: 502px;
+        
+        
+    }
+    #Contactbutton{ /* Submit knapp nederst i divven */
+
+        position: inherit;
+        bottom: 0;
+        left: 1px;
+        right: 1px;
+        
+        
+        border: transparent;
+        background-color: #4A4E69;
+        border-radius: 5px;
+        color: white;
+        
+        font-size: inherit;
+        font-size: fit-content;
+        font-family: 'Inter', sans-serif;
+    }
+    #contactbox{ /* Infoboksen til høyre for formet */
+
+        background-color: #4A4E69;
+        border-radius: 15px;
+        position: relative;
+        width: 80%;
+        max-width: fit-content;
+        height: fit-content;
+        left: 10%;
+        top: 10vh;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 30%;
+        
+        
+        
+        
+    }
