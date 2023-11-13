@@ -89,7 +89,7 @@
     #next {
         margin-left: 140%;
     }
-    #pris, #tax, #pretax, #total {
+    #pris {
       float: right;
       margin-right: 30px;
       margin-top: -33px;
@@ -99,39 +99,37 @@
     }
     @media only screen and (max-width: 768px) {
       .container {
+        float: bottom;
         flex-direction: column;
         width: auto;
       }
 
       .form-container {
-        margin-top: 200px;
-        order: 1;
+        position: relative;
       }
 
       .box {
-        order: 2;
-        margin-top: 10px; /* Adjust as needed */
-        float: left;
-        margin-top: -680px;
-        margin-left: 60px;
-        margin-right: 20px;
-        width: 300px;
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
       }
+
       h1 {
-        margin-left: 90px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
       #next {
         margin-top: 10px;
       }
-
     }
   </style>      
 </head>
-<body onload="checkout();">
+<body>
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
-    <div class="form-container">
+    <form class="form-container" action="error.html"> <!--Whoopsies-->
       <div class="c1">
         <label for="fname">First Name</label>
         <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
@@ -160,17 +158,17 @@
         <label for="numb">Phone Number</label>
         <input type="text" id="numb" name="numb">
       </div>
-      <div class="c1">
-        <input type="submit" value="Next" class="btn" id="next">
-      </div>
-    </div>
+        <div class="c1">
+          <input type="submit" value="Next" class="btn" id="next">
+        </div>
+    </form>
   </div>
   <div class="box">
     <h4>Order summary</h4>
-    <p id="navn">Product price:</p><p id="pretax">18000 kr</p>
+    <p id="navn">Product price:</p><p id="pris">18000 kr</p>
     <p id="navn">Shipping:<p id="pris">100 kr</p>
-    <p id="navn">Tax: </p><p id="tax">900 kr</p>
-    <p id="navn">Order total: </p><p id="total">19000 kr</p>
+    <p id="navn">Tax: </p><p id="pris">900 kr</p>
+    <p id="navn">Order total: </p><p id="pris">19000 kr</p>
   </div>
 </body>
 <footer>
