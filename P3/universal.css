@@ -177,7 +177,7 @@ footer {
       }
     
       .content {
-        /* display: none; */
+        display: none;
         position: absolute;
         min-width: 160px;
         left: 0;
@@ -201,6 +201,7 @@ footer {
 
       .dropdown:hover .content {
         opacity: 1;
+        display: block;
     }
       
       /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -306,10 +307,23 @@ footer {
     background-color: #F1F1F1;
     text-align: left;
     font-size: large;
+    padding: 30px;
+    margin-right: 100px;
+    margin-top: -470px;
+    margin-left: 600px;
+    font-family: Inter, sans-serif;
+
     border-radius: 10%;
 }
 #ab1 {
-    width: 600px;
+    float: left;
+    width: 400px;
+    margin-bottom: 50px;
+    padding: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    
 }
 #safety {
     width: 200px;

@@ -4,6 +4,7 @@ const meny = `
         <a href="./checkout.html" id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></a>
         <div class="dropdown">
           <a href="./checkout.html" class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></a>
+          <button class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></button>
           <div class="content">
           <a href="./frontpage.html" class="dropdown_links">Home</a>
           <a href="./buy.html" class="dropdown_links">Buy</a>
@@ -21,6 +22,7 @@ const meny = `
         </div>
     </div>
 `
+
 document.querySelector('#hovedmeny').innerHTML = meny
 
 const footer = `
@@ -82,4 +84,103 @@ const footer = `
   applyScaleEffect(footer_links);
   applyScaleEffect(dropdown_links);
   applyScaleEffect(menu_links);
-  
+
+function changeURL(){
+  let url = window.location.href
+  if (url.includes('product1')) {
+    var newURL = "checkout.html?product1";
+    document.getElementById("product--button").href = newURL;
+  }
+  else if (url.includes('product2')) {
+    var newURL = "checkout.html?product2";
+    document.getElementById("product--button").href = newURL;
+  }
+  else if (url.includes('product3')) {
+    var newURL = "checkout.html?product3";
+    document.getElementById("product--button").href = newURL;
+  }
+  else if (url.includes('product4')) {
+    var newURL = "checkout.html?product4";
+    document.getElementById("product--button").href = newURL;
+  }
+  else if (url.includes('product5')) {
+    var newURL = "checkout.html?product5";
+    document.getElementById("product--button").href = newURL;
+  }
+  else if (url.includes('product6')) {
+    var newURL = "checkout.html?product6";
+    document.getElementById("product--button").href = newURL;
+  }
+}
+
+function individualWatchesImage() {
+  let url = window.location.href
+  let productImage = document.createElement('img');
+  //create image
+  //Gjør livet mitt lettere ved å forkorte noe jeg bruker om igjen.
+  let productParagraph = document.getElementById('product--description')
+  let productHeader = document.getElementById('product--header')
+  let productPrice = document.getElementById('product--price')
+
+  let productHeader1 = document.createTextNode("Breitling Superocean")
+  let productHeader2 = document.createTextNode("Omega Aquaterra")
+  let productHeader3 = document.createTextNode("Omega Seamaster")
+  let productHeader4 = document.createTextNode("Laurent Ferrier")
+  let productHeader5 = document.createTextNode("Audemars Piguet")
+  let productHeader6 = document.createTextNode("Rolex GMT")
+  //Headerene sin tekst.
+
+  let productPrice1 = document.createTextNode("45 000kr")
+  let productPrice2 = document.createTextNode("55 000kr")
+  let productPrice3 = document.createTextNode("50 000kr")
+  let productPrice4 = document.createTextNode("200kr")
+  let productPrice5 = document.createTextNode("1 000 000kr")
+  let productPrice6 = document.createTextNode("160 000kr")
+
+  let productDescription1 = document.createTextNode("Breitling Superocean er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
+  let productDescription2 = document.createTextNode("Omega Aquaterra er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
+  let productDescription3 = document.createTextNode("Omega Seamaster er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
+  let productDescription4 = document.createTextNode("Laurent Ferrier er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
+  let productDescription5 = document.createTextNode("Audermars Piquet er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
+  let productDescription6 = document.createTextNode("Rolex GMT er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
+  //Paragrafet sin tekst
+
+
+  if (url.includes('product1')) {
+    productImage.src = "./img/breitling_superocean.png"
+    productHeader.appendChild(productHeader1)
+    productPrice.appendChild(productPrice1)
+    productParagraph.appendChild(productDescription1)
+  } else if (url.includes('product2')) {
+    productImage.src = "./img/omega_aquaterra.png"
+    productHeader.appendChild(productHeader2)
+    productPrice.appendChild(productPrice2)
+    productParagraph.appendChild(productDescription2)
+  } else if (url.includes('product3')) {
+    productImage.src = "./img/omega_seamaster.png"
+    productHeader.appendChild(productHeader3)
+    productPrice.appendChild(productPrice3)
+    productParagraph.appendChild(productDescription3)
+  } else if (url.includes('product4')) {
+    productImage.src = "./img/laurent_ferrier.png"
+    productHeader.appendChild(productHeader4)
+    productPrice.appendChild(productPrice4)
+    productParagraph.appendChild(productDescription4)
+  } else if (url.includes('product5')) {
+    productImage.src = "./img/Audemars_piguet.png"
+    productHeader.appendChild(productHeader5)
+    productPrice.appendChild(productPrice5)
+    productParagraph.appendChild(productDescription5)
+  } else if (url.includes('product6')) {
+    productImage.src = "./img/rolex_gmt.png"
+    productHeader.appendChild(productHeader6)
+    productPrice.appendChild(productPrice6)
+    productParagraph.appendChild(productDescription6)
+  } else if (url.includes('individualWatches.html')) {
+    productImage.src = "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
+
+  }
+  //Skjekker om linken inneholder X og loader forskjellig bilder og tekst ut ifra det.
+  document.getElementById('product--image').appendChild(productImage)
+//Skriver ut bilde.
+}
