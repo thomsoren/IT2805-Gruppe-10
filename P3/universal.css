@@ -617,20 +617,15 @@ footer {
     margin-left: 10%;
     color: white;
     width: fit-content;
-    
-
 }
 
 #contactcontact{ /* Divven til Contact boks*/
-
     position: relative;
     display: inline-block;
     margin-left: 10%;
     color: white;
     width: fit-content;
-    
     top: 5px;
-    
 }
 
 #contactmessage{ /* Eposten */
