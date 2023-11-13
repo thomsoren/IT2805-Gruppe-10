@@ -10,7 +10,6 @@
       font-family: 'Inter', sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      margin: 20px;
     }
 
     h1 {
@@ -98,13 +97,39 @@
     #navn {
       margin-right: 140px;
     }
+    @media only screen and (max-width: 768px) {
+      .container {
+        float: bottom;
+        flex-direction: column;
+        width: auto;
+      }
+
+      .form-container {
+        position: relative;
+      }
+
+      .box {
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #next {
+        margin-top: 10px;
+      }
+    }
   </style>      
 </head>
 <body>
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
-    <div class="form-container">
+    <form class="form-container" action="error.html"> <!--Whoopsies-->
       <div class="c1">
         <label for="fname">First Name</label>
         <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
@@ -133,10 +158,10 @@
         <label for="numb">Phone Number</label>
         <input type="text" id="numb" name="numb">
       </div>
-      <div class="c1">
-        <input type="submit" value="Next" class="btn" id="next">
-      </div>
-    </div>
+        <div class="c1">
+          <input type="submit" value="Next" class="btn" id="next">
+        </div>
+    </form>
   </div>
   <div class="box">
     <h4>Order summary</h4>
