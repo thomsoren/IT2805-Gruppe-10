@@ -1,23 +1,23 @@
 const meny = `
 <div id="menu">
         <img id="logo" src="img/logo.png" alt="logo"/>
-        <button id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></button>
+        <a href="./checkout.html" id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></a>
         <div class="dropdown">
-          <button class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></button>
+          <a href="./checkout.html class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></a>
           <div class="content">
-          <a href="#" class="dropdown_links">Home</a>
-          <a href="#" class="dropdown_links">Buy</a>
-          <a href="#" class="dropdown_links">Sell</a>
-          <a href="#" class="dropdown_links">About us</a>
-          <a href="#" class="dropdown_links">Contact</a>
+          <a href="./frontpage.html" class="dropdown_links">Home</a>
+          <a href="./buy.html" class="dropdown_links">Buy</a>
+          <a href="./sell.html" class="dropdown_links">Sell</a>
+          <a href="./about.html" class="dropdown_links">About us</a>
+          <a href="./contact.html" class="dropdown_links">Contact</a>
         </div>
         </div>
         <div id="menu_div">
-          <button class="menu_link">Home</button>
-          <button class="menu_link">Buy</button>
-          <button class="menu_link">Sell</button>
-          <button class="menu_link">About us</button>
-          <button class="menu_link">Contact</button>
+          <a href="./frontpage.html" class="menu_link">Home</a>
+          <a href="./buy.html" class="menu_link">Buy</a>
+          <a href="./sell.html" class="menu_link">Sell</a>
+          <a href="./about.html" class="menu_link">About us</a>
+          <a href="./contact.html" class="menu_link">Contact</a>
         </div>
     </div>
 `
@@ -39,16 +39,47 @@ const footer = `
       </div>
       <div class="flex-box">
         <h1>Sitemap</h1>
-          <button class="footer_link">Home</button>
+          <a href="./frontpage.html" class="footer_link">Home</a>
           <br/>
-          <button class="footer_link">Buy</button>
+          <a href="./buy.html" class="footer_link">Buy</a>
           <br/>
-          <button class="footer_link">Sell</button>
+          <a href="./sell.html" class="footer_link">Sell</a>
           <br/>
-          <button class="footer_link">About us</button>
+          <a href="./about.html" class="footer_link">About us</a>
           <br/>
-          <button class="footer_link">Contact</button>
+          <a href="./contact.html" class="footer_link">Contact</a>
       </div>
     </div>
   </footer>`
-  document.querySelector('#footer').innerHTML = footer
+  document.querySelector("#footer").innerHTML = footer
+
+  function linkroll(element) {
+    element.style.transform = "scale(1.1)";
+    element.style.transition = "transform 0.1s";
+  }
+  
+  function resetScale(element) {
+    element.style.transform = "scale(1)";
+  }
+  
+  // since getElementsclassName returns a live nodeList, we have to itterate over each one to see if they are being hovered.
+  function applyScaleEffect(elements) {
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].addEventListener("mouseover", function() {
+        linkroll(elements[i]);
+      });
+      elements[i].addEventListener('mouseout', function() {
+        resetScale(elements[i]);
+      });
+    }
+  }
+  
+  let footer_links = document.getElementsByClassName("footer_link");
+  let dropdown_links = document.getElementsByClassName("dropdown_links");
+  let menu_links = document.getElementsByClassName("menu_link");
+  
+  // Apply the scaling effect to each group
+  applyScaleEffect(footer_links);
+  applyScaleEffect(dropdown_links);
+  applyScaleEffect(menu_links);
+  

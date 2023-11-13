@@ -3,9 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell watch</title>
+  <link rel="stylesheet" href="universal.css" />
   <title>Document</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Kanit:wght@600&display=swap');
+  </style>
+
 </head>
 <body>
-  <include src="./universal.html"><include>
+  
+  <div id="hovedmeny"></div>
+    
+  <form action="error.html">
+    <div id="sellerForm">
+      <label for="name" class="sellerLabel">Name of watch</label>
+      <input name="name" id="name" class="sellerInformation" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
+
+      <label for="brand" class="sellerLabel">Brand</label>
+      <select name="brand" id="brand" class="sellerInformation">
+        <option value="Rolex">Rolex</option>
+        <option value="Nomos Glashütte">Nomos Glashütte</option>
+        <option value="Audemars Piguet">Audemars Piguet</option>
+        <option value="Vacheron Constantin">Vacheron Constantin</option>
+        <option value="Blancpain">Blancpain</option>
+        <option value="other">Other</option>
+        <option selected="selected" hidden></option>
+      </select>
+
+      <label for="description" class="sellerLabel">Description</label>
+      
+      <textarea name="description" id="description" wrap="soft" class="sellerInformation" style="height: 100px; resize: vertical;" required></textarea>
+      <label for="price" class="sellerLabel">Desired price</label>
+      <input name="price" id="price" class="sellerInformation" pattern="[0-9,]+" required>
+
+      <label for="picture" class="sellerLabel">Add picture</label>
+      <input type="file" multiple="multiple" name="picture" id="picture" class="sellerInformation" required style="padding: 5px 0 0 5px; width: 100px; content-visibility: hidden;">
+
+      <label for="address" class="sellerLabel">Address</label>
+      <input name="address" id="address" class="sellerInformation" required>
+
+      <label for="email" class="sellerLabel">E-mail</label>
+      <input type="email" name="email" id="email" class="sellerInformation" required>
+
+      <input type="submit" value="Next" class="sellerInformation" 
+      style="width:100px; 
+            margin-left: 300px; 
+            background-color: #4A4E69;
+            color: white;">
+    </div>
+  </form>
 </body>
+<footer>
+  <div id="footer"></div>
+  <script src="universal.js"></script>
+</footer>
 </html>
