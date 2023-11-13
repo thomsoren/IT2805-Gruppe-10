@@ -36,12 +36,7 @@ body {
     width: 15vw;
     bottom: 1.2vw;
     position: relative;
-}
-
-
-.menu_link:hover, #cart_button:hover, .footer_link:hover {
-    color: #F2E9E4;
-    transform: scale(1.13);
+    z-index: 2;
 }
 
 #logo {
@@ -297,11 +292,6 @@ footer {
     right: 15px;
 }
 
-
-
-
-
-
 #about {
     background-color: #F1F1F1;
     text-align: left;
@@ -555,10 +545,11 @@ footer {
 }
 
 #Contactheader{
-
+    position: relative;;
     font-family: 'Inter', sans-serif;
     text-align: left;
     font-size: 50px;
+    z-index: 0;
 }
 
 #ContactMessage{ /* Meldingsboks for å skrive melding */
@@ -852,7 +843,6 @@ footer {
     color: white;
     background-color: #4a4e69;
 }
-=======
 
 #sellerForm{    /*Styled div for the seller form*/
     margin:40px auto 40px auto;
@@ -874,4 +864,3 @@ footer {
 .sellerLabel{
     margin-bottom: 10px;
 }
->>>>>>> e06918122ff9ae41ab15a7420fd5f24c99374441
