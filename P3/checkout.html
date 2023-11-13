@@ -89,7 +89,7 @@
     #next {
         margin-left: 140%;
     }
-    #pris {
+    #pris, #tax, #pretax, #total {
       float: right;
       margin-right: 30px;
       margin-top: -33px;
@@ -127,7 +127,7 @@
     }
   </style>      
 </head>
-<body>
+<body onload="checkout();">
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
@@ -167,10 +167,10 @@
   </div>
   <div class="box">
     <h4>Order summary</h4>
-    <p id="navn">Product price:</p><p id="pris">18000 kr</p>
+    <p id="navn">Product price:</p><p id="pretax">18000 kr</p>
     <p id="navn">Shipping:<p id="pris">100 kr</p>
-    <p id="navn">Tax: </p><p id="pris">900 kr</p>
-    <p id="navn">Order total: </p><p id="pris">19000 kr</p>
+    <p id="navn">Tax: </p><p id="tax">900 kr</p>
+    <p id="navn">Order total: </p><p id="total">19000 kr</p>
   </div>
 </body>
 <footer>

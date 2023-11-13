@@ -1,7 +1,6 @@
 const meny = `
 <div id="menu">
         <img id="logo" src="img/logo.png" alt="logo"/>
-        <a href="./checkout.html" id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></a>
         <div class="dropdown">
           <button class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></button>
           <div class="content">
@@ -132,7 +131,7 @@ function individualWatchesImage() {
   let productPrice1 = document.createTextNode("45 000kr")
   let productPrice2 = document.createTextNode("55 000kr")
   let productPrice3 = document.createTextNode("50 000kr")
-  let productPrice4 = document.createTextNode("200kr")
+  let productPrice4 = document.createTextNode("200 000kr")
   let productPrice5 = document.createTextNode("1 000 000kr")
   let productPrice6 = document.createTextNode("160 000kr")
 
@@ -142,7 +141,9 @@ function individualWatchesImage() {
   let productDescription4 = document.createTextNode("Laurent Ferrier er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
   let productDescription5 = document.createTextNode("Audermars Piquet er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
   let productDescription6 = document.createTextNode("Rolex GMT er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  //Paragrafet sin tekst
+  //  Paragrafet sin tekst
+
+ 
 
 
   if (url.includes('product1')) {
@@ -179,7 +180,53 @@ function individualWatchesImage() {
     productImage.src = "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
 
   }
+
+
   //Skjekker om linken inneholder X og loader forskjellig bilder og tekst ut ifra det.
   document.getElementById('product--image').appendChild(productImage)
 //Skriver ut bilde.
 }
+
+function checkout(){
+  let url = window.location.href;
+
+  let checkoutPretax = document.getElementById("pretax")
+  let checkoutTax = document.getElementById("tax")
+  let total = document.getElementById("total")
+  let newPrice;
+  let tax;
+  let pretax;
+
+  if (url.includes('product1')) {
+      newPrice = "45 000kr";
+      tax = "11 250kr";
+      pretax = "33 850kr";
+  } else if (url.includes('product2')) {
+      newPrice = "55 000kr"
+      tax = "13 750kr"
+      pretax = "41 350kr"
+  } else if (url.includes('product3')) {
+      newPrice = "50 000kr"
+      tax = "12 500kr";
+      pretax = "37 400kr"
+  } else if (url.includes('product4')) {
+      newPrice = "200 000kr";
+      tax = "10 000kr"
+      pretax = "190 000kr"
+  } else if (url.includes('product5')) {
+      newPrice = "1 000 100kr"; 
+      tax = "250 000kr"
+      pretax = "750 000kr"
+  } else if (url.includes('product6')) {
+      newPrice = "160 100kr";
+      tax = "40 000kr"
+      pretax = "120 000kr"
+  }
+
+  checkoutPretax.textContent = pretax;
+  checkoutTax.textContent = tax;
+  total.textContent = newPrice;
+}
+
+// Call the function to update the price
+updateProductPrice();
