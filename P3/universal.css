@@ -818,7 +818,6 @@ footer {
     text-align: left;
     max-width: 10ch;
 }
-<<<<<<< HEAD
 #product--header {
     left: 40%;
     top: 25%;
@@ -844,7 +843,6 @@ footer {
     color: white;
     background-color: #4a4e69;
 }
-=======
 
 #sellerForm{    /*Styled div for the seller form*/
     margin:40px auto 40px auto;
@@ -866,4 +864,3 @@ footer {
 .sellerLabel{
     margin-bottom: 10px;
 }
->>>>>>> e06918122ff9ae41ab15a7420fd5f24c99374441
