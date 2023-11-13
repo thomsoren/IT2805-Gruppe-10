@@ -35,9 +35,9 @@
       padding: 10px;
       border-radius: 10px;
       box-sizing: border-box;
-      margin-right: 100px;
+      margin-right: 300px;
       float: right;
-      margin-top: -800px;
+      margin-top: -1000px;
     }
 
     .c1 {
@@ -99,31 +99,29 @@
     }
     @media only screen and (max-width: 768px) {
       .container {
+        float: bottom;
         flex-direction: column;
         width: auto;
       }
 
       .form-container {
-        margin-top: 200px;
-        order: 1;
+        position: relative;
       }
 
       .box {
-        order: 2;
-        margin-top: 10px; /* Adjust as needed */
-        float: left;
-        margin-top: -680px;
-        margin-left: 60px;
-        margin-right: 20px;
-        width: 300px;
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
       }
+
       h1 {
-        margin-left: 90px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
       #next {
         margin-top: 10px;
       }
-
     }
   </style>      
 </head>
@@ -131,39 +129,39 @@
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
-    <div class="form-container">
+    <form class="form-container" action="error.html"> <!--Whoopsies-->
       <div class="c1">
         <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
+        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
       </div>
       <div class="c1">
         <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
+        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
       </div>
       <div class="c1">
         <label for="sname">Street Name</label>
-        <input type="text" id="sname" name="sname">
+        <input type="text" id="sname" name="sname" required>
       </div>
       <div class="c1">
         <label for="pcode">Postal Code</label>
-        <input type="text" id="pcode" name="pcode">
+        <input type="text" id="pcode" name="pcode" required>
       </div>
       <div class="c1">
         <label for="city">City</label>
-        <input type="text" id="city" name="city">
+        <input type="text" id="city" name="city" required>
       </div>
       <div class="c1">
         <label for="province">Province</label>
-        <input type="text" id="province" name="province">
+        <input type="text" id="province" name="province" required>
       </div>
       <div class="c1">
         <label for="numb">Phone Number</label>
-        <input type="text" id="numb" name="numb">
+        <input type="text" id="numb" name="numb" required>
       </div>
-      <div class="c1">
-        <input type="submit" value="Next" class="btn" id="next">
-      </div>
-    </div>
+        <div class="c1">
+          <input type="submit" value="Next" class="btn" id="next">
+        </div>
+    </form>
   </div>
   <div class="box">
     <h4>Order summary</h4>
