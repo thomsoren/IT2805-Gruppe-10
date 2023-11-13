@@ -172,7 +172,7 @@ footer {
       }
     
       .content {
-        /* display: none; */
+        display: none;
         position: absolute;
         min-width: 160px;
         left: 0;
@@ -196,6 +196,7 @@ footer {
 
       .dropdown:hover .content {
         opacity: 1;
+        display: block;
     }
       
       /* Change the background color of the dropdown button when the dropdown content is shown */
