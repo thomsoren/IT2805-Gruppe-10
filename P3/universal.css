@@ -307,13 +307,18 @@ footer {
     text-align: left;
     font-size: large;
     padding: 30px;
+    margin-right: 100px;
 
 }
 #ab1 {
-    width: 600px;
+    width: 400px;
     float: left;
     margin-bottom: 50px;
     padding: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    
 }
 #safety {
     width: 200px;
