@@ -3,7 +3,7 @@ const meny = `
         <img id="logo" src="img/logo.png" alt="logo"/>
         <a href="./checkout.html" id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></a>
         <div class="dropdown">
-          <a href="./checkout.html class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></a>
+          <a href="./checkout.html" class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></a>
           <div class="content">
           <a href="./frontpage.html" class="dropdown_links">Home</a>
           <a href="./buy.html" class="dropdown_links">Buy</a>
