@@ -54,6 +54,10 @@ body {
     height: auto;
     width: 3.5vw;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
 }
 
 #cart_button {
@@ -69,6 +73,7 @@ body {
 footer {
     display: flex;
     position: relative;
+    bottom: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -90,7 +95,6 @@ footer {
     transition: 0.2s; 
     display: inline-block;
     text-decoration: none;
-    
 }
 
 .flex-container {
@@ -114,15 +118,22 @@ footer {
 } 
 
 #phone{
+    top: -50%;
+    
     width: 15px;
-    height: 15px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
 }
 
 #message{
     top: -50%;
-    bottom: -1px;
+    bottom: -5px;
+    right: 5px;
     width: 20px;
     height: auto;
+    overflow: hidden;
+    position: relative;
 }
 
 #emailtekst{
@@ -292,17 +303,22 @@ footer {
 
 
 #about {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto !important;
-    float: none !important;
-    border: 0.5rem solid;
-    border-color:#2D2D2D;
+    background-color: #F1F1F1;
+    text-align: left;
     font-size: large;
-    border-radius: 10%;
+    padding: 30px;
+    margin-right: 100px;
+
 }
 #ab1 {
-    width: 600px;
+    width: 400px;
+    float: left;
+    margin-bottom: 50px;
+    padding: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    
 }
 #safety {
     width: 200px;
@@ -328,6 +344,9 @@ footer {
     font-size: 3vw;
     color: white;
     transition: 0.15s;
+    text-decoration: none;
+    cursor: pointer;  
+    display: inline-block;
 }
 
 .frontpage_button:hover {
@@ -400,10 +419,15 @@ footer {
 .frontpage_view_more_button {
     font-family: inter;
     font-size: 1vw;
+    border: 1.2px solid black;
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
 }
 
 .frontpage_view_more_button:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .frontpage_watchbox_2 {
@@ -497,6 +521,276 @@ footer {
     #rolex_img {
         height: 110%;
     }
+
+    
+}
+
+
+#Contactinformation{ /* Div'en til formet */
+
+    
+    position: relative;
+    text-align: left;
+    left: 5%;
+    height: 10%;
+    width: 40%;
+    margin: 20px;
+    
+}
+
+.Contactinformation{ /* Input boksene */
+
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 7px;
+    border-color: transparent;
+    width: 25vw;
+    background-color: #D9D9D9;
+    height: 2vw;
+    max-width: 502px;
+    
+    
+}
+
+#Contactheader{
+
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-size: 50px;
+}
+
+#ContactMessage{ /* Meldingsboks for å skrive melding */
+
+    height: 200px;
+    vertical-align: top;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.Contactlabel{ /* Form labels */
+
+    
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+#Contactbutton{ /* Submit knapp nederst i divven */
+
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    
+    border: transparent;
+    background-color: #4A4E69;
+    border-radius: 5px;
+    color: white;
+    height: 5%;
+    display: inline-block;
+    font-size: inherit;
+    font-size: fit-content;
+    
+}
+
+#contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
+
+    display: flex;
+
+}
+
+#contactbox{ /* Infoboksen til høyre for formet */
+
+    background-color: #4A4E69;
+    border-radius: 15px;
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    left: 10%;
+    top: 20vh;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    
+    
+    
+    
+}
+
+
+#contactwatchme{
+
+    display: inline-block;
+    margin-left: 10%;
+    color: white;
+    width: fit-content;
+    
+
+}
+
+#contactcontact{ /* Divven til Contact boks*/
+
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    color: white;
+    width: fit-content;
+    
+    top: 5px;
+    
+}
+
+#contactmessage{ /* Eposten */
+    top: -50%;
+    bottom: -5px;
+    right: 3px;
+    width: 20px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    
+}
+#contactcontact h1{
+
+   position: relative;
+   top: -3vh;
+   
+
+}
+
+#contactemail{
+    height: fit-content;
+    width: 100%;
+    overflow-y:hidden;
+}
+
+
+
+@media (max-width: 768px){
+
+    #Contactinformation{ /* Div'en til formet */
+
+    
+        position: relative;
+        text-align: left;
+        left: 5%;
+        height: 10%;
+        width: 40%;
+        margin: 20px;
+        display: block;
+        
+    }
+    #contactbox{ /* Infoboksen til høyre for formet */
+
+        background-color: #4A4E69;
+        border-radius: 15px;
+        position: relative;
+        width: 40%;
+        max-width: fit-content;
+        height: fit-content;
+        left: 10%;
+        top: 20vh;
+        font-family: 'Inter', sans-serif;
+        
+        
+        
+        
+    }
+    #contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
+
+        display: flex;
+        display: inline-block;
+    }
+
+    #Contactinformation{ /* Div'en til formet */
+
+    
+        position: relative;
+        text-align: left;
+        left: 5%;
+        height: 10%;
+        width: 80%;
+        margin: 20px;
+        
+    }
+
+    .Contactinformation{ /* Input boksene */
+
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        display: block;
+        border-radius: 7px;
+        border-color: transparent;
+        width: 80vw;
+        background-color: #D9D9D9;
+        height: 2vw;
+        max-width: 502px;
+        
+        
+    }
+    #Contactbutton{ /* Submit knapp nederst i divven */
+
+        position: inherit;
+        bottom: 0;
+        left: 1px;
+        right: 1px;
+        
+        
+        border: transparent;
+        background-color: #4A4E69;
+        border-radius: 5px;
+        color: white;
+        
+        font-size: inherit;
+        font-size: fit-content;
+        font-family: 'Inter', sans-serif;
+    }
+    #contactbox{ /* Infoboksen til høyre for formet */
+
+        background-color: #4A4E69;
+        border-radius: 15px;
+        position: relative;
+        width: 80%;
+        max-width: fit-content;
+        height: fit-content;
+        left: 10%;
+        top: 10vh;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 30%;
+        
+        
+        
+        
+    }
+    #contactcontact h1{
+
+        position: relative;
+        top: auto;
+        
+     
+     }}
+    
+#Sorry{
+
+    font-family: "Kanit", "sans-serif";
+    text-align: center;
+    top: 20vh;
+    position: relative;
+    font-size: 2.55em;
+    
+}
+
+#unavailable{
+    top: 20vh;
+    position: relative;
+    font-family: "Kanit", "sans-serif";
+    font-weight: 1000;
+    text-align: center;
+    font-size: 2em;
+
 }
 
 #individualWatches--main {
@@ -533,6 +827,7 @@ footer {
     text-align: left;
     max-width: 10ch;
 }
+<<<<<<< HEAD
 #product--header {
     left: 40%;
     top: 25%;
@@ -558,3 +853,26 @@ footer {
     color: white;
     background-color: #4a4e69;
 }
+=======
+
+#sellerForm{    /*Styled div for the seller form*/
+    margin:40px auto 40px auto;
+    width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.sellerInformation{
+    margin-bottom: 20px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+}
+
+.sellerLabel{
+    margin-bottom: 10px;
+}
+>>>>>>> e06918122ff9ae41ab15a7420fd5f24c99374441
