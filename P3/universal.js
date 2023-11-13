@@ -51,6 +51,35 @@ const footer = `
       </div>
     </div>
   </footer>`
-  document.querySelector('#footer').innerHTML = footer
+  document.querySelector("#footer").innerHTML = footer
 
-
+  function linkroll(element) {
+    element.style.transform = "scale(1.1)";
+    element.style.transition = "transform 0.1s";
+  }
+  
+  function resetScale(element) {
+    element.style.transform = "scale(1)";
+  }
+  
+  // since getElementsclassName returns a live nodeList, we have to itterate over each one to see if they are being hovered.
+  function applyScaleEffect(elements) {
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].addEventListener("mouseover", function() {
+        linkroll(elements[i]);
+      });
+      elements[i].addEventListener('mouseout', function() {
+        resetScale(elements[i]);
+      });
+    }
+  }
+  
+  let footer_links = document.getElementsByClassName("footer_link");
+  let dropdown_links = document.getElementsByClassName("dropdown_links");
+  let menu_links = document.getElementsByClassName("menu_link");
+  
+  // Apply the scaling effect to each group
+  applyScaleEffect(footer_links);
+  applyScaleEffect(dropdown_links);
+  applyScaleEffect(menu_links);
+  
