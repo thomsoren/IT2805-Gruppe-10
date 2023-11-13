@@ -25,7 +25,7 @@ document.querySelector('#hovedmeny').innerHTML = meny
 
 const footer = `
 <footer>
-  <div class="flex-container">
+<div class="flex-container">
       <div class="flex-box">
         <h1>Address & postal office</h1>
         <p>Klokkeveien 123 A</p>
@@ -52,3 +52,5 @@ const footer = `
     </div>
   </footer>`
   document.querySelector('#footer').innerHTML = footer
+
+

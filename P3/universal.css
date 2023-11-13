@@ -91,7 +91,6 @@ footer {
     transition: 0.2s; 
     display: inline-block;
     text-decoration: none;
-    
 }
 
 .flex-container {
@@ -329,6 +328,9 @@ footer {
     font-size: 3vw;
     color: white;
     transition: 0.15s;
+    text-decoration: none;
+    cursor: pointer;  
+    display: inline-block;
 }
 
 .frontpage_button:hover {
@@ -401,10 +403,15 @@ footer {
 .frontpage_view_more_button {
     font-family: inter;
     font-size: 1vw;
+    border: 1.2px solid black;
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
 }
 
 .frontpage_view_more_button:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .frontpage_watchbox_2 {
@@ -498,6 +505,39 @@ footer {
     #rolex_img {
         height: 110%;
     }
+}
+
+#individualWatches--main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+#product--image {
+    width: 50%;
+    height: 50%;
+}
+#product--image img {
+    width: 40vw;
+    height: 40vw;
+    left: 60%;
+}
+#product--description__box {
+    width: 50%;
+    height: 50%;
+
+}
+#product--description {
+    left: 40%;
+    top: 50%;
+    position: absolute;
+    width: 50%;
+    max-width: 80ch;
+}
+#product--description text{
+    text-align: left;
+    max-width: 10ch;
 }
 
 #sellerForm{    /*Styled div for the seller form*/
