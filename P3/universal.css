@@ -297,13 +297,18 @@ footer {
     text-align: left;
     font-size: large;
     padding: 30px;
+    margin-right: 100px;
 
 }
 #ab1 {
-    width: 600px;
+    width: 400px;
     float: left;
     margin-bottom: 50px;
     padding: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    
 }
 #safety {
     width: 200px;
@@ -781,28 +786,30 @@ footer {
 
 #individualWatches--main {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-bottom: 17vw;
 }
 #product--image {
     width: 50%;
-    height: 50%;
+    height: 20%;
 }
 #product--image img {
-    width: 40vw;
-    height: 40vw;
-    left: 60%;
+    width: 100%;
+    height: 100%;
+    left: 40%;
+    max-width: 40vw;
+    max-height: 80vw;
 }
 #product--description__box {
     width: 50%;
     height: 50%;
-
+    font-family: Inter;
 }
 #product--description {
     left: 40%;
-    top: 50%;
+    top: 43.5%;
     position: absolute;
     width: 50%;
     max-width: 80ch;
@@ -811,6 +818,33 @@ footer {
     text-align: left;
     max-width: 10ch;
 }
+<<<<<<< HEAD
+#product--header {
+    left: 40%;
+    top: 25%;
+    position: absolute;
+    width: 50%;
+}
+#product--price{
+    left: 40%;
+    top: 35.5%;
+    position: absolute;
+    width: 50%;
+}
+#product--button{
+    left: 40%;
+    top: 96%;
+    position: absolute;
+    color: black;
+    padding: 1% 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 1.25vw;
+    color: white;
+    background-color: #4a4e69;
+}
+=======
 
 #sellerForm{    /*Styled div for the seller form*/
     margin:40px auto 40px auto;
@@ -832,3 +866,4 @@ footer {
 .sellerLabel{
     margin-bottom: 10px;
 }
+>>>>>>> e06918122ff9ae41ab15a7420fd5f24c99374441
