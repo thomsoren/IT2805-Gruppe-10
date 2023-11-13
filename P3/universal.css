@@ -36,7 +36,12 @@ body {
     width: 15vw;
     bottom: 1.2vw;
     position: relative;
-    z-index: 2;
+}
+
+
+.menu_link:hover, #cart_button:hover, .footer_link:hover {
+    color: #F2E9E4;
+    transform: scale(1.13);
 }
 
 #logo {
@@ -191,7 +196,7 @@ footer {
         border-radius: 10px;
         z-index: 10;
         margin-bottom: 1px;
-        text-align: center;
+        text-align: center;  
       }
 
       .dropdown:hover .content {
@@ -293,6 +298,11 @@ footer {
     right: 15px;
 }
 
+
+
+
+
+
 #about {
     background-color: #F1F1F1;
     text-align: left;
@@ -303,6 +313,7 @@ footer {
     margin-left: 600px;
     font-family: Inter, sans-serif;
 
+    border-radius: 10%;
 }
 #ab1 {
     float: left;
@@ -549,11 +560,10 @@ footer {
 }
 
 #Contactheader{
-    position: relative;;
+
     font-family: 'Inter', sans-serif;
     text-align: left;
     font-size: 50px;
-    z-index: 0;
 }
 
 #ContactMessage{ /* Meldingsboks for å skrive melding */
@@ -790,30 +800,28 @@ footer {
 
 #individualWatches--main {
     position: relative;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin-top: 10vw;
-    margin-bottom: 17vw;
+    margin-bottom: 10vw;
 }
 #product--image {
     width: 50%;
-    height: 20%;
+    height: 50%;
 }
 #product--image img {
-    width: 100%;
-    height: 100%;
-    left: 40%;
-    max-width: 40vw;
-    max-height: 80vw;
+    width: 40vw;
+    height: 40vw;
+    left: 60%;
 }
 #product--description__box {
     width: 50%;
     height: 50%;
-    font-family: Inter;
+
 }
 #product--description {
     left: 40%;
-    top: 43.5%;
+    top: 50%;
     position: absolute;
     width: 50%;
     max-width: 80ch;
@@ -821,31 +829,6 @@ footer {
 #product--description text{
     text-align: left;
     max-width: 10ch;
-}
-#product--header {
-    left: 40%;
-    top: 25%;
-    position: absolute;
-    width: 50%;
-}
-#product--price{
-    left: 40%;
-    top: 35.5%;
-    position: absolute;
-    width: 50%;
-}
-#product--button{
-    left: 40%;
-    top: 96%;
-    position: absolute;
-    color: black;
-    padding: 1% 2%;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-family: Inter;
-    font-size: 1.25vw;
-    color: white;
-    background-color: #4a4e69;
 }
 
 #sellerForm{    /*Styled div for the seller form*/
