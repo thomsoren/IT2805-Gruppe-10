@@ -299,16 +299,19 @@ footer {
     font-size: large;
     padding: 30px;
     margin-right: 100px;
+    margin-top: -470px;
+    margin-left: 600px;
+    font-family: Inter, sans-serif;
 
 }
 #ab1 {
-    width: 400px;
     float: left;
+    width: 400px;
     margin-bottom: 50px;
     padding: 30px;
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 100px;
     
 }
 #safety {
