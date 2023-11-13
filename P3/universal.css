@@ -709,25 +709,20 @@ footer {
         left: 10%;
         top: 10vh;
         font-family: 'Inter', sans-serif;
-        margin-bottom: 30%;
-        
-        
-        
-        
+        margin-bottom: 30%;   
     }
+
     #contactcontact h1{
         position: relative;
         top: auto;
      }}
     
 #Sorry{
-
     font-family: "Kanit", "sans-serif";
     text-align: center;
     top: 20vh;
     position: relative;
     font-size: 2.55em;
-    
 }
 
 #unavailable{
@@ -737,7 +732,6 @@ footer {
     font-weight: 1000;
     text-align: center;
     font-size: 2em;
-
 }
 
 #individualWatches--main {
@@ -747,20 +741,23 @@ footer {
     margin-top: 10vw;
     margin-bottom: 10vw;
 }
+
 #product--image {
     width: 50%;
     height: 50%;
 }
+
 #product--image img {
     width: 40vw;
     height: 40vw;
     left: 60%;
 }
+
 #product--description__box {
     width: 50%;
     height: 50%;
-
 }
+
 #product--description {
     left: 40%;
     top: 50%;
@@ -768,6 +765,7 @@ footer {
     width: 50%;
     max-width: 80ch;
 }
+
 #product--description text{
     text-align: left;
     max-width: 10ch;

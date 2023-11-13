@@ -229,4 +229,4 @@ function checkout(){
 }
 
 // Call the function to update the price
-updateProductPrice();
+checkout();
