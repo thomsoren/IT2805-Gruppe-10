@@ -28,31 +28,7 @@
     function individualWatchesImage() {
         let productImage = document.createElement('img');
         //create image
-        let url = window.location.href
         //Gjør livet mitt lettere ved å forkorte noe jeg bruker om igjen.
-
-        if (url.includes('product1')) {
-            productImage.src = "./img/breitling_superocean.png"
-        } else if (url.includes('product2')) {
-            productImage.src = "./img/omega_aquaterra.png"
-        } else if (url.includes('product3')) {
-            productImage.src = "./img/omega_seamaster.png"
-        } else if (url.includes('product4')) {
-            productImage.src = "./img/laurent ferrier.png"
-        } else if (url.includes('product5')) {
-            productImage.src = "./img/Audemars piguet.png"
-        } else if (url.includes('product6')) {
-            productImage.src = "./img/rolex_gmt.png"
-        } else if (url.includes('individualWatches.html')) {
-            productImage.src = "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
-        }
-        //Skjekker om linken inneholder X og loader forskjellig bilder ut ifra det.
-        document.getElementById('product--image').appendChild(productImage)
-        //Skriver ut bilde.
-    }
-
-    function individualWatchesDescription(){
-        //same shit different name
         let productParagraph = document.getElementById('product--description')
         let productDescription1 = document.createTextNode("Breitling Superocean er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
         let productDescription2 = document.createTextNode("Omega Aquaterra er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
@@ -62,20 +38,37 @@
         let productDescription6 = document.createTextNode("Rolex GMT er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
 
         let url = window.location.href
-
         if (url.includes('product1')) {
+            productImage.src = "./img/breitling_superocean.png"
             productParagraph.appendChild(productDescription1)
         } else if (url.includes('product2')) {
+            productImage.src = "./img/omega_aquaterra.png"
             productParagraph.appendChild(productDescription2)
         } else if (url.includes('product3')) {
+            productImage.src = "./img/omega_seamaster.png"
             productParagraph.appendChild(productDescription3)
         } else if (url.includes('product4')) {
+            productImage.src = "./img/laurent ferrier.png"
             productParagraph.appendChild(productDescription4)
         } else if (url.includes('product5')) {
+            productImage.src = "./img/Audemars piguet.png"
             productParagraph.appendChild(productDescription5)
         } else if (url.includes('product6')) {
+            productImage.src = "./img/rolex_gmt.png"
             productParagraph.appendChild(productDescription6)
+        } else if (url.includes('individualWatches.html')) {
+            productImage.src = "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
+            
         }
+        //Skjekker om linken inneholder X og loader forskjellig bilder ut ifra det.
+        document.getElementById('product--image').appendChild(productImage)
+        //Skriver ut bilde.
+    }
+
+    function individualWatchesDescription(){
+        //same shit different name
+       
+
         //kommentarer er cringe
     }
 </script>
