@@ -54,6 +54,10 @@ body {
     height: auto;
     width: 3.5vw;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
 }
 
 #cart_button {
