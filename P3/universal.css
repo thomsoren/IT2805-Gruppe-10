@@ -400,10 +400,15 @@ footer {
 .frontpage_view_more_button {
     font-family: inter;
     font-size: 1vw;
+    border: 1.2px solid black;
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
 }
 
 .frontpage_view_more_button:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .frontpage_watchbox_2 {
