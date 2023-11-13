@@ -264,11 +264,9 @@ footer {
     margin-bottom: 80px;
     border-radius: 10%;
     border: 2px solid rgb(0, 0, 0);
-    background-color: none;
+    background-color: white;
     text-align: center;
-    text-decoration: none;
-    
-    
+    text-decoration: none; 
 }
 .bbox a h1 {
     margin-top: 40px;
@@ -515,25 +513,19 @@ footer {
     #rolex_img {
         height: 110%;
     }
-
-    
 }
 
 
 #Contactinformation{ /* Div'en til formet */
-
-    
     position: relative;
     text-align: left;
     left: 5%;
     height: 10%;
     width: 40%;
     margin: 20px;
-    
 }
 
 .Contactinformation{ /* Input boksene */
-
     position: relative;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -544,8 +536,6 @@ footer {
     background-color: #D9D9D9;
     height: 2vw;
     max-width: 502px;
-    
-    
 }
 
 #Contactheader{
@@ -557,7 +547,6 @@ footer {
 }
 
 #ContactMessage{ /* Meldingsboks for å skrive melding */
-
     height: 200px;
     vertical-align: top;
     resize: none;
@@ -566,20 +555,14 @@ footer {
 
 
 .Contactlabel{ /* Form labels */
-
-    
     position: relative;
-    font-family: 'Inter', sans-serif;
-    
-    
+    font-family: 'Inter', sans-serif;  
 }
 
 #Contactbutton{ /* Submit knapp nederst i divven */
-
     position: absolute;
     bottom: 10px;
     right: 10%;
-    
     border: transparent;
     background-color: #4A4E69;
     border-radius: 5px;
@@ -587,18 +570,13 @@ footer {
     height: 5%;
     display: inline-block;
     font-size: inherit;
-    font-size: fit-content;
-    
 }
 
 #contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
-
     display: flex;
-
 }
 
 #contactbox{ /* Infoboksen til høyre for formet */
-
     background-color: #4A4E69;
     border-radius: 15px;
     position: relative;
@@ -607,34 +585,23 @@ footer {
     left: 10%;
     top: 20vh;
     font-family: 'Inter', sans-serif;
-    display: inline-block;
-    
-    
-    
-    
+    display: inline-block;   
 }
 
-
 #contactwatchme{
-
     display: inline-block;
     margin-left: 10%;
     color: white;
     width: fit-content;
-    
-
 }
 
 #contactcontact{ /* Divven til Contact boks*/
-
     position: relative;
     display: inline-block;
     margin-left: 10%;
     color: white;
     width: fit-content;
-    
-    top: 5px;
-    
+    top: 5px;  
 }
 
 #contactmessage{ /* Eposten */
@@ -644,15 +611,13 @@ footer {
     width: 20px;
     height: auto;
     overflow: hidden;
-    position: relative;
-    
+    position: relative;  
 }
+
 #contactcontact h1{
 
    position: relative;
    top: -3vh;
-   
-
 }
 
 #contactemail{
@@ -661,13 +626,9 @@ footer {
     overflow-y:hidden;
 }
 
-
-
 @media (max-width: 768px){
 
     #Contactinformation{ /* Div'en til formet */
-
-    
         position: relative;
         text-align: left;
         left: 5%;
@@ -678,7 +639,6 @@ footer {
         
     }
     #contactbox{ /* Infoboksen til høyre for formet */
-
         background-color: #4A4E69;
         border-radius: 15px;
         position: relative;
@@ -687,32 +647,23 @@ footer {
         height: fit-content;
         left: 10%;
         top: 20vh;
-        font-family: 'Inter', sans-serif;
-        
-        
-        
-        
+        font-family: 'Inter', sans-serif;    
     }
     #contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
-
         display: flex;
         display: inline-block;
     }
 
     #Contactinformation{ /* Div'en til formet */
-
-    
         position: relative;
         text-align: left;
         left: 5%;
         height: 10%;
         width: 80%;
-        margin: 20px;
-        
+        margin: 20px;   
     }
 
     .Contactinformation{ /* Input boksene */
-
         position: relative;
         margin-top: 15px;
         margin-bottom: 20px;
@@ -723,24 +674,18 @@ footer {
         background-color: #D9D9D9;
         height: 2vw;
         max-width: 502px;
-        
-        
     }
-    #Contactbutton{ /* Submit knapp nederst i divven */
 
+    #Contactbutton{ /* Submit knapp nederst i divven */
         position: inherit;
         bottom: 0;
         left: 1px;
         right: 1px;
-        
-        
         border: transparent;
         background-color: #4A4E69;
         border-radius: 5px;
         color: white;
-        
         font-size: inherit;
-        font-size: fit-content;
         font-family: 'Inter', sans-serif;
     }
     #contactbox{ /* Infoboksen til høyre for formet */
@@ -761,11 +706,8 @@ footer {
         
     }
     #contactcontact h1{
-
         position: relative;
         top: auto;
-        
-     
      }}
     
 #Sorry{
