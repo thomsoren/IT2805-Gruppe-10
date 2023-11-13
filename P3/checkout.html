@@ -1,59 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="universal.css" />
-    <title>Document</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
-      </style>      
-  </head>
-  <body>
-    <div class = "wrapper">
-    <nav>
-      <div id="menu">
-        <img id="logo" src="img/logo.png" alt="logo"/>
-        <button id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></button>
-        <div id="menu_div">
-          <button class="menu_link">Home</button>
-          <button class="menu_link">Buy</button>
-          <button class="menu_link">Sell</button>
-          <button class="menu_link">About us</button>
-          <button class="menu_link">Contact</button>
-        </div>
-    </nav>
-    <div class="Content">
- 
-    </div>
-    </div>
-    <script src="universal.js"></script>
-  </body>
-  <footer>
-    <div class="flex-container">
-      <div class="flex-box">
-        <h1>Address & postal office</h1>
-        <p>Klokkeveien 123 A</p>
-        <p>7052, Trondheim</p>
-        <p>Norway</p>
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="universal.css" />
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 20px;
+    }
+
+    h1 {
+      margin-left: 40%;
+      font-size: 300%;
+    }
+
+    .container {
+      display: flex;
+      width: 600px;
+      margin: 0 auto;
+      background-color: #f4f4f4;
+    }
+
+    .form-container {
+      flex: 0.6;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: antiquewhite;
+      padding: 10px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin-right: 100px;
+      float: right;
+      margin-top: -800px;
+    }
+
+    .c1 {
+      width: 48%;
+      margin-right: 4%;
+      box-sizing: border-box;
+    }
+
+    .c1:nth-child(2),
+    .c1:nth-child(5) {
+      margin-right: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 92%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      box-sizing: border-box;
+      background-color: lightgrey;
+      font-weight: 300;
+    }
+
+    .btn {
+      background-color: darkslateblue;
+      color: white;
+      padding: 12px;
+      margin-top: -100px;
+      border: none;
+      cursor: pointer;
+      font-size: 17px;
+      width: 60%;
+      border-radius: 3px;
+      right: 200px;
+    }
+
+    .btn:hover {
+      background-color: lime;
+    }
+    #numb, #province, #sname {
+        width: 200%;
+    }
+    #next {
+        margin-left: 140%;
+    }
+    #pris {
+      float: right;
+      margin-right: 30px;
+      margin-top: -33px;
+    }
+    #navn {
+      margin-right: 140px;
+    }
+  </style>      
+</head>
+<body>
+  <div id="hovedmeny"></div>
+  <h1>Checkout</h1>
+  <div class="container">
+    <div class="form-container">
+      <div class="c1">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
       </div>
-      <div class="flex-box">
-        <h1>Contact</h1>
-        <p><img src="img/telephonew.png" alt="phone" id="phone"> +47 901 23 456</p>
-        <p id="emailtekst"><img src="./img/Message.png" alt="message" id="message">Somethingsomething@gmail.com</p>
+      <div class="c1">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
       </div>
-      <div class="flex-box">
-        <h1>Sitemap</h1>
-          <button class="footer_link">Home</button>
-          <br/>
-          <button class="footer_link">Buy</button>
-          <br/>
-          <button class="footer_link">Sell</button>
-          <br/>
-          <button class="footer_link">About us</button>
-          <br/>
-          <button class="footer_link">Contact</button>
+      <div class="c1">
+        <label for="sname">Street Name</label>
+        <input type="text" id="sname" name="sname">
+      </div>
+      <div class="c1">
+        <label for="pcode">Postal Code</label>
+        <input type="text" id="pcode" name="pcode">
+      </div>
+      <div class="c1">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <div class="c1">
+        <label for="province">Province</label>
+        <input type="text" id="province" name="province">
+      </div>
+      <div class="c1">
+        <label for="numb">Phone Number</label>
+        <input type="text" id="numb" name="numb">
+      </div>
+      <div class="c1">
+        <input type="submit" value="Next" class="btn" id="next">
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="box">
+    <h4>Order summary</h4>
+    <p id="navn">Product price:</p><p id="pris">18000 kr</p>
+    <p id="navn">Shipping:<p id="pris">100 kr</p>
+    <p id="navn">Tax: </p><p id="pris">900 kr</p>
+    <p id="navn">Order total: </p><p id="pris">19000 kr</p>
+  </div>
+</body>
+<footer>
+  <div id="footer"></div>
+  <script src="universal.js"></script>
+</footer>
 </html>
