@@ -19,6 +19,7 @@
 
     .container {
       display: flex;
+      position: relative;
       width: 600px;
       margin: 0 auto;
       background-color: #f4f4f4;
@@ -32,12 +33,12 @@
 
     .box {
       background-color: antiquewhite;
-      padding: 10px;
-      border-radius: 10px;
-      box-sizing: border-box;
-      margin-right: 100px;
-      float: right;
-      margin-top: -800px;
+      padding: 15px;
+      border-radius: 19px;
+      bottom: 70vh;
+      left: 43vw;
+      width: 250px;
+      position: absolute;
     }
 
     .c1 {
@@ -89,7 +90,7 @@
     #next {
         margin-left: 140%;
     }
-    #pris {
+    #pris, #pretax, #tax, #total {
       float: right;
       margin-right: 30px;
       margin-top: -33px;
@@ -99,79 +100,78 @@
     }
     @media only screen and (max-width: 768px) {
       .container {
+        float: bottom;
         flex-direction: column;
         width: auto;
       }
 
       .form-container {
-        margin-top: 200px;
-        order: 1;
+        position: relative;
       }
 
       .box {
-        order: 2;
-        margin-top: 10px; /* Adjust as needed */
-        float: left;
-        margin-top: -680px;
-        margin-left: 60px;
-        margin-right: 20px;
-        width: 300px;
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
       }
+
       h1 {
-        margin-left: 90px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
       #next {
         margin-top: 10px;
       }
-
     }
   </style>      
 </head>
-<body>
+<body onload="checkout();">
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
-    <div class="form-container">
+    <form class="form-container" action="error.html"> <!--Whoopsies-->
       <div class="c1">
         <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
+        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
       </div>
       <div class="c1">
         <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
+        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
       </div>
       <div class="c1">
         <label for="sname">Street Name</label>
-        <input type="text" id="sname" name="sname">
+        <input type="text" id="sname" name="sname" required>
       </div>
       <div class="c1">
         <label for="pcode">Postal Code</label>
-        <input type="text" id="pcode" name="pcode">
+        <input type="text" id="pcode" name="pcode" required>
       </div>
       <div class="c1">
         <label for="city">City</label>
-        <input type="text" id="city" name="city">
+        <input type="text" id="city" name="city" required>
       </div>
       <div class="c1">
         <label for="province">Province</label>
-        <input type="text" id="province" name="province">
+        <input type="text" id="province" name="province" required>
       </div>
       <div class="c1">
         <label for="numb">Phone Number</label>
-        <input type="text" id="numb" name="numb">
+        <input type="text" id="numb" name="numb" required>
       </div>
-      <div class="c1">
-        <input type="submit" value="Next" class="btn" id="next">
-      </div>
+        <div class="c1">
+          <input type="submit" value="Next" class="btn" id="next">
+        </div>
+    </form>
+    <div class="box">
+      <h4>Order summary</h4>
+      <p id="navn">Product price:</p><p id="pretax"></p>
+      <p id="navn">Shipping:<p id="pris">100 kr</p>
+      <p id="navn">Tax: </p><p id="tax"></p>
+      <p id="navn">Order total: </p><p id="total"></p>
     </div>
   </div>
-  <div class="box">
-    <h4>Order summary</h4>
-    <p id="navn">Product price:</p><p id="pris">18000 kr</p>
-    <p id="navn">Shipping:<p id="pris">100 kr</p>
-    <p id="navn">Tax: </p><p id="pris">900 kr</p>
-    <p id="navn">Order total: </p><p id="pris">19000 kr</p>
-  </div>
+  
 </body>
 <footer>
   <div id="footer"></div>

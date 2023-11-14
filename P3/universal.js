@@ -1,7 +1,6 @@
 const meny = `
 <div id="menu">
         <img id="logo" src="img/logo.png" alt="logo"/>
-        <a href="./checkout.html" id="cart_button"><img id="cart_img"src="img/cart.png" alt="cart" ></a>
         <div class="dropdown">
           <button class="dropbtn"><img id="burger_bar" src="img/dropdown menu.png" alt="dropdown"/></button>
           <div class="content">
@@ -132,17 +131,19 @@ function individualWatchesImage() {
   let productPrice1 = document.createTextNode("45 000kr")
   let productPrice2 = document.createTextNode("55 000kr")
   let productPrice3 = document.createTextNode("50 000kr")
-  let productPrice4 = document.createTextNode("200kr")
+  let productPrice4 = document.createTextNode("200 000kr")
   let productPrice5 = document.createTextNode("1 000 000kr")
   let productPrice6 = document.createTextNode("160 000kr")
 
-  let productDescription1 = document.createTextNode("Breitling Superocean er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  let productDescription2 = document.createTextNode("Omega Aquaterra er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  let productDescription3 = document.createTextNode("Omega Seamaster er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  let productDescription4 = document.createTextNode("Laurent Ferrier er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  let productDescription5 = document.createTextNode("Audermars Piquet er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  let productDescription6 = document.createTextNode("Rolex GMT er orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitororem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis iaculis sem vitae egestas. Maecenas ac enim fringilla nulla congue pellentesque. Proin laoreet tortor ac nunc sodales, a eleifend neque ullamcorper. Nullam sit amet iaculis risus, eu dictum urna. Curabitur viverra metus sit amet hendrerit porta. Nam ornare feugiat porttitor.")
-  //Paragrafet sin tekst
+  let productDescription1 = document.createTextNode("The Breitling Superocean watch is a sublime fusion of modern design and robust functionality, capturing the essence of underwater exploration with undeniable style. Crafted with precision and durability, its sturdy case, available in stainless steel, projects strength and resilience. The unidirectional rotating bezel, a signature feature, underscores its commitment to dive-ready performance. The Superocean's dial, marked by bold indices and luminescent hands, ensures optimal readability in challenging underwater environments. Engineered for aquatic adventures, this timepiece combines reliability with a distinctive aesthetic. The attention to detail extends to the integrated bracelet, highlighting Breitling's dedication to both form and function. The Breitling Superocean stands as a symbol of underwater excellence, marrying cutting-edge design with the technical prowess required for deep-sea exploration.")
+  let productDescription2 = document.createTextNode("The Omega Aquaterra watch is a paragon of Swiss watchmaking, harmonizing contemporary design with precision engineering. Featuring a sleek and versatile design, the timepiece seamlessly combines elegance with functionality. Its stainless steel or premium metal case, coupled with a distinctive teak-patterned dial, reflects a commitment to both style and substance. The Aquaterra is more than a watch; it's an embodiment of Omega's maritime heritage, offering water resistance and robust performance. The co-axial movement ensures accurate timekeeping, while the refined detailing, including a polished bezel and integrated bracelet, signifies Omega's dedication to craftsmanship. The Omega Aquaterra stands as a beacon of modern sophistication, marrying form and function effortlessly.")
+  let productDescription3 = document.createTextNode("The Omega Seamaster watch is a testament to the brand's maritime legacy, seamlessly blending contemporary design with cutting-edge functionality. Crafted with precision, the Seamaster boasts a robust stainless steel or premium metal case, embodying both strength and sophistication. Its iconic wave-patterned dial not only adds a distinctive touch but also reflects a connection to the sea. Engineered for underwater excellence, the Seamaster ensures water resistance and durability. The co-axial movement guarantees precise timekeeping, while the refined details, such as the unidirectional rotating bezel and integrated bracelet, showcase Omega's commitment to both form and function. The Omega Seamaster stands as an enduring symbol of adventure, innovation, and timeless style.")
+  let productDescription4 = document.createTextNode("The Laurent Ferrier timepiece is a pinnacle of horological excellence, marrying classical elegance with meticulous craftsmanship. Renowned for its understated sophistication, the watch features a refined case crafted from premium materials, radiating both strength and refinement. The minimalist dial design, marked by subtle details, reflects a timeless aesthetic. Powered by a precision movement, the Laurent Ferrier watch ensures accurate timekeeping, a hallmark of traditional watchmaking. The attention to detail extends to the meticulously finished case and the carefully integrated bracelet, exemplifying the brand's dedication to unparalleled craftsmanship. More than just a watch, Laurent Ferrier stands as an emblem of refined luxury, epitomizing the fusion of classic design and mechanical artistry.")
+  let productDescription5 = document.createTextNode("The Royal Oak watch by Audemars Piguet is a pinnacle of Swiss craftsmanship, seamlessly fusing avant-garde design with traditional watchmaking. Its iconic octagonal bezel and integrated case, crafted from stainless steel or precious metals, exude strength and elegance. The tapisserie dial adds a refined touch, while polished hexagonal screws and an integrated bracelet showcase meticulous detailing. Powered by a high-precision mechanical movement, the Royal Oak is not just a timepiece but a symbol of sophistication and status. A coveted accessory, it stands as a timeless testament to the marriage of form and function, epitomizing superior craftsmanship.")
+  let productDescription6 = document.createTextNode("The Rolex GMT watch is an embodiment of iconic design and technical prowess, seamlessly merging classic aesthetics with modern functionality. Crafted with precision and durability, its robust case, available in stainless steel or precious metals, exudes a timeless allure. The distinctive bi-color bezel, a hallmark of the GMT series, allows for dual time zone tracking, catering to the needs of globetrotters. Powered by a highly accurate movement, the Rolex GMT ensures impeccable timekeeping. The attention to detail extends to the meticulously finished bracelet and the iconic cyclops lens over the date window, showcasing Rolex's commitment to unparalleled craftsmanship. A symbol of travel and sophistication, the Rolex GMT is a true testament to the brand's enduring legacy.")
+  //  Paragrafet sin tekst
+
+ 
 
 
   if (url.includes('product1')) {
@@ -179,7 +180,52 @@ function individualWatchesImage() {
     productImage.src = "https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
 
   }
+
+
   //Skjekker om linken inneholder X og loader forskjellig bilder og tekst ut ifra det.
   document.getElementById('product--image').appendChild(productImage)
 //Skriver ut bilde.
 }
+
+function checkout(){
+  let url = window.location.href;
+
+  let checkoutPretax = document.getElementById("pretax")
+  let checkoutTax = document.getElementById("tax")
+  let total = document.getElementById("total")
+  let newPrice;
+  let tax;
+  let pretax;
+
+  if (url.includes('product1')) {
+      newPrice = "45 000kr";
+      tax = "11 250kr";
+      pretax = "33 850kr";
+  } else if (url.includes('product2')) {
+      newPrice = "55 000kr"
+      tax = "13 750kr"
+      pretax = "41 350kr"
+  } else if (url.includes('product3')) {
+      newPrice = "50 000kr"
+      tax = "12 500kr";
+      pretax = "37 400kr"
+  } else if (url.includes('product4')) {
+      newPrice = "200 000kr";
+      tax = "10 000kr"
+      pretax = "190 000kr"
+  } else if (url.includes('product5')) {
+      newPrice = "1 000 100kr"; 
+      tax = "250 000kr"
+      pretax = "750 000kr"
+  } else if (url.includes('product6')) {
+      newPrice = "160 100kr";
+      tax = "40 000kr"
+      pretax = "120 000kr"
+  }
+
+  checkoutPretax.textContent = pretax;
+  checkoutTax.textContent = tax;
+  total.textContent = newPrice;
+}
+
+// Call the function to update the price
