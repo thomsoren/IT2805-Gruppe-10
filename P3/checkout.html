@@ -19,6 +19,7 @@
 
     .container {
       display: flex;
+      position: relative;
       width: 600px;
       margin: 0 auto;
       background-color: #f4f4f4;
@@ -32,12 +33,12 @@
 
     .box {
       background-color: antiquewhite;
-      padding: 10px;
-      border-radius: 10px;
-      box-sizing: border-box;
-      margin-right: 300px;
-      float: right;
-      margin-top: -1000px;
+      padding: 15px;
+      border-radius: 19px;
+      bottom: 70vh;
+      left: 43vw;
+      width: 250px;
+      position: absolute;
     }
 
     .c1 {
@@ -89,7 +90,7 @@
     #next {
         margin-left: 140%;
     }
-    #pris {
+    #pris, #pretax, #tax, #total {
       float: right;
       margin-right: 30px;
       margin-top: -33px;
@@ -125,7 +126,7 @@
     }
   </style>      
 </head>
-<body>
+<body onload="checkout();">
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
@@ -162,14 +163,15 @@
           <input type="submit" value="Next" class="btn" id="next">
         </div>
     </form>
+    <div class="box">
+      <h4>Order summary</h4>
+      <p id="navn">Product price:</p><p id="pretax"></p>
+      <p id="navn">Shipping:<p id="pris">100 kr</p>
+      <p id="navn">Tax: </p><p id="tax"></p>
+      <p id="navn">Order total: </p><p id="total"></p>
+    </div>
   </div>
-  <div class="box">
-    <h4>Order summary</h4>
-    <p id="navn">Product price:</p><p id="pretax">18000 kr</p>
-    <p id="navn">Shipping:<p id="pris">100 kr</p>
-    <p id="navn">Tax: </p><p id="tax">900 kr</p>
-    <p id="navn">Order total: </p><p id="total">19000 kr</p>
-  </div>
+  
 </body>
 <footer>
   <div id="footer"></div>
