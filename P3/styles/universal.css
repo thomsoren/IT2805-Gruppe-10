@@ -160,6 +160,7 @@ footer {
     
       .content {
         display: none;
+        top: 80px;
         position: absolute;
         min-width: 160px;
         left: 0;
