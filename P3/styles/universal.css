@@ -718,6 +718,7 @@ footer {
     display: flex; /* Use flexbox for the container */
     position: relative;
     margin-top: 10vh;
+    margin: 0;
 }
 
 #product--image {
