@@ -36,7 +36,12 @@ body {
     width: 15vw;
     bottom: 1.2vw;
     position: relative;
-    z-index: 2;
+}
+
+
+.menu_link:hover, #cart_button:hover, .footer_link:hover {
+    color: #F2E9E4;
+    transform: scale(1.13);
 }
 
 #logo {
@@ -191,7 +196,7 @@ footer {
         border-radius: 10px;
         z-index: 10;
         margin-bottom: 1px;
-        text-align: center;
+        text-align: center;  
       }
 
       .dropdown:hover .content {
@@ -264,11 +269,9 @@ footer {
     margin-bottom: 80px;
     border-radius: 10%;
     border: 2px solid rgb(0, 0, 0);
-    background-color: none;
+    background-color: white;
     text-align: center;
-    text-decoration: none;
-    
-    
+    text-decoration: none; 
 }
 .bbox a h1 {
     margin-top: 40px;
@@ -293,6 +296,11 @@ footer {
     right: 15px;
 }
 
+
+
+
+
+
 #about {
     background-color: #F1F1F1;
     text-align: left;
@@ -303,6 +311,7 @@ footer {
     margin-left: 600px;
     font-family: Inter, sans-serif;
 
+    border-radius: 10%;
 }
 #ab1 {
     float: left;
@@ -515,25 +524,19 @@ footer {
     #rolex_img {
         height: 110%;
     }
-
-    
 }
 
 
 #Contactinformation{ /* Div'en til formet */
-
-    
     position: relative;
     text-align: left;
     left: 5%;
     height: 10%;
     width: 40%;
     margin: 20px;
-    
 }
 
 .Contactinformation{ /* Input boksene */
-
     position: relative;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -544,20 +547,16 @@ footer {
     background-color: #D9D9D9;
     height: 2vw;
     max-width: 502px;
-    
-    
 }
 
 #Contactheader{
-    position: relative;;
+
     font-family: 'Inter', sans-serif;
     text-align: left;
     font-size: 50px;
-    z-index: 0;
 }
 
 #ContactMessage{ /* Meldingsboks for å skrive melding */
-
     height: 200px;
     vertical-align: top;
     resize: none;
@@ -566,20 +565,14 @@ footer {
 
 
 .Contactlabel{ /* Form labels */
-
-    
     position: relative;
-    font-family: 'Inter', sans-serif;
-    
-    
+    font-family: 'Inter', sans-serif;  
 }
 
 #Contactbutton{ /* Submit knapp nederst i divven */
-
     position: absolute;
     bottom: 10px;
     right: 10%;
-    
     border: transparent;
     background-color: #4A4E69;
     border-radius: 5px;
@@ -587,18 +580,13 @@ footer {
     height: 5%;
     display: inline-block;
     font-size: inherit;
-    font-size: fit-content;
-    
 }
 
 #contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
-
     display: flex;
-
 }
 
 #contactbox{ /* Infoboksen til høyre for formet */
-
     background-color: #4A4E69;
     border-radius: 15px;
     position: relative;
@@ -607,34 +595,23 @@ footer {
     left: 10%;
     top: 20vh;
     font-family: 'Inter', sans-serif;
-    display: inline-block;
-    
-    
-    
-    
+    display: inline-block;   
 }
 
-
 #contactwatchme{
-
     display: inline-block;
     margin-left: 10%;
     color: white;
     width: fit-content;
-    
-
 }
 
 #contactcontact{ /* Divven til Contact boks*/
-
     position: relative;
     display: inline-block;
     margin-left: 10%;
     color: white;
     width: fit-content;
-    
-    top: 5px;
-    
+    top: 5px;  
 }
 
 #contactmessage{ /* Eposten */
@@ -644,15 +621,13 @@ footer {
     width: 20px;
     height: auto;
     overflow: hidden;
-    position: relative;
-    
+    position: relative;  
 }
+
 #contactcontact h1{
 
    position: relative;
    top: -3vh;
-   
-
 }
 
 #contactemail{
@@ -661,13 +636,9 @@ footer {
     overflow-y:hidden;
 }
 
-
-
 @media (max-width: 768px){
 
     #Contactinformation{ /* Div'en til formet */
-
-    
         position: relative;
         text-align: left;
         left: 5%;
@@ -678,7 +649,6 @@ footer {
         
     }
     #contactbox{ /* Infoboksen til høyre for formet */
-
         background-color: #4A4E69;
         border-radius: 15px;
         position: relative;
@@ -687,32 +657,23 @@ footer {
         height: fit-content;
         left: 10%;
         top: 20vh;
-        font-family: 'Inter', sans-serif;
-        
-        
-        
-        
+        font-family: 'Inter', sans-serif;    
     }
     #contactflexbox{ /* Den er her for å dele siden i to, slik at vi kan ha infoboksen ved siden av formet */
-
         display: flex;
         display: inline-block;
     }
 
     #Contactinformation{ /* Div'en til formet */
-
-    
         position: relative;
         text-align: left;
         left: 5%;
         height: 10%;
         width: 80%;
-        margin: 20px;
-        
+        margin: 20px;   
     }
 
     .Contactinformation{ /* Input boksene */
-
         position: relative;
         margin-top: 15px;
         margin-bottom: 20px;
@@ -723,24 +684,18 @@ footer {
         background-color: #D9D9D9;
         height: 2vw;
         max-width: 502px;
-        
-        
     }
-    #Contactbutton{ /* Submit knapp nederst i divven */
 
+    #Contactbutton{ /* Submit knapp nederst i divven */
         position: inherit;
         bottom: 0;
         left: 1px;
         right: 1px;
-        
-        
         border: transparent;
         background-color: #4A4E69;
         border-radius: 5px;
         color: white;
-        
         font-size: inherit;
-        font-size: fit-content;
         font-family: 'Inter', sans-serif;
     }
     #contactbox{ /* Infoboksen til høyre for formet */
@@ -754,28 +709,20 @@ footer {
         left: 10%;
         top: 10vh;
         font-family: 'Inter', sans-serif;
-        margin-bottom: 30%;
-        
-        
-        
-        
+        margin-bottom: 30%;   
     }
-    #contactcontact h1{
 
+    #contactcontact h1{
         position: relative;
         top: auto;
-        
-     
      }}
     
 #Sorry{
-
     font-family: "Kanit", "sans-serif";
     text-align: center;
     top: 20vh;
     position: relative;
     font-size: 2.55em;
-    
 }
 
 #unavailable{
@@ -785,67 +732,43 @@ footer {
     font-weight: 1000;
     text-align: center;
     font-size: 2em;
-
 }
 
 #individualWatches--main {
     position: relative;
-    width: auto;
-    height: auto;
-    margin-top: 10vw;
-    margin-bottom: 17vw;
-}
-#product--image {
-    width: 50%;
-    height: 20%;
-}
-#product--image img {
     width: 100%;
     height: 100%;
-    left: 40%;
-    max-width: 40vw;
-    max-height: 80vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
+
+#product--image {
+    width: 50%;
+    height: 50%;
+}
+
+#product--image img {
+    width: 40vw;
+    height: 40vw;
+    left: 60%;
+}
+
 #product--description__box {
     width: 50%;
     height: 50%;
-    font-family: Inter;
 }
+
 #product--description {
     left: 40%;
-    top: 43.5%;
+    top: 50%;
     position: absolute;
     width: 50%;
     max-width: 80ch;
 }
+
 #product--description text{
     text-align: left;
     max-width: 10ch;
-}
-#product--header {
-    left: 40%;
-    top: 25%;
-    position: absolute;
-    width: 50%;
-}
-#product--price{
-    left: 40%;
-    top: 35.5%;
-    position: absolute;
-    width: 50%;
-}
-#product--button{
-    left: 40%;
-    top: 96%;
-    position: absolute;
-    color: black;
-    padding: 1% 2%;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-family: Inter;
-    font-size: 1.25vw;
-    color: white;
-    background-color: #4a4e69;
 }
 
 #sellerForm{    /*Styled div for the seller form*/

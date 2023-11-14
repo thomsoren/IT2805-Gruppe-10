@@ -64,7 +64,7 @@
 
       .grid-container {
         display: grid;
-        grid-template-columns: 2fr 1fr auto 1fr;
+        grid-template-columns: 2fr 1fr auto;
       }
 
       .grid-item {
@@ -92,9 +92,58 @@
     </div>
     <div class="body_content">
         <h1>Changes that we made</h1>
-        <p>git pu</p>
-        <h2>Henrik</h2>
-        <p>I worked with individualWatches.html. The descriptions that were made in p2 were mostly visual, and as such I have taken a few liberties when it comes to function. We have several "products" and as such i wanted to consolidate alle the different products into only individualWatches.html. This was achived through just adding a line to the url (in our case product1-6 and make the website display different pictures, prices, names and descriptions accordingly.) as for the styling, i did not follow the size requierments that were specified for the images because i thought it was too big and looked ugly. Also i just made the navbar and footer into a variable and innerHTMLed it to all the websites.</p>
-    </div>
+        <h2>individualWatches.html</h2>
+        <p>I (henrik) worked with individualWatches.html. The descriptions that were made in p2 were mostly visual, and as such I have taken a few liberties when it comes to function. We have several "products" and as such i wanted to consolidate all the different products into only individualWatches.html. This was achived through just adding a line to the url (in our case product1-6 and make the website display different pictures, prices, names and descriptions accordingly.) as for the styling, i did not follow the size requierments that were specified for the images because i thought it was too big and looked ugly. Also i made the link change depending on the url so that the price in checkout can be changed by reusing the same code.</p>
+        <h2>universal.js</h2>
+        <p> I (henrik) just made the navbar and footer into a variable and innerHTMLed it to all the websites.</p>
+        <h2>contact.html</h2>
+        <p> The main changes to this website is in the information in the box off to the right of the form. The information is the same, but the styling of the information is not. "Contact" has been pushed beneath "Watch me Trade" instead of to the right of it </p>
+        <p> The submit button has also not been styled the exact same way as in the mockup, but it is mostly identical</p>
+        <p> For the mobile version, I decided to push the information down beneath the form instead of to the right, and have the user scroll down for the information instead.</p>
+        <h2>error.html</h2>
+        <p> This has just been styled to be more appealing to look at. We made the message into two sentences to seem more apologetic</p>
+
+        <h2>Changes in universal layout</h2>
+        <p>I (Ludvig) made a few visual changes to the header, like removing the underline, and changing all the font sizes to vw to be more fluid. Becoming bold, and changing color didn't look very good either, so instead, I made a function in javascript called applyScaleEffect. This function scales all sitelinks to 10% of it's original style. I also applied a transition effect to make it look more smoothly.</p>
+            <p>When the window size goes to a ipad window size or smaller, the horisontal page links changes to a button, that when hovered, will show the page links as a dropdown menu. Used @media (max-width: 768px) for this, and we used this media querie as the default when styling all the other pages as well.</p>
+        <p>We were supposed to have the current page you were visiting scale by 10%, but we removed this feature as it didn't feel as responsive as we thought it would be.</p>
+            <h2>Changes to frontpage.html</h2>
+            <p>The frontpage looks pretty much the same as it was supposed to, except from making the div boxes that each watch is to be displayed wider. I also made a media querie so that each box is displayed on top of each other, with the same margin on all sides.</p>
+      
+        </div>
+        <div class="body_content">
+            <h1>Work delegation</h1>
+            <p>Changes to script:</p>
+            <ul>
+                <li>linkroll</li>
+                <li>resetScale</li>
+                <li>applyScaleEffect</li>
+                <li>changeURL</li>
+                <li>individualWatchesImage</li>
+            </ul>
+        </div>
+        <div class="body_content">
+            <div class="grid-container">
+                <div class="grid-item"><h4>Filename</h4></div>
+                <div class="grid-item"><h4>Description</h4></div>
+                <div class="grid-item"><h4>In charge</h4></div>
+
+                <div class="grid-item">frontpage.html</div>
+                <div class="grid-item">Made the frontpage</div>
+                <div class="grid-item">Ludvig</div>
+
+                <div class="grid-item">universal layout</div>
+                <div class="grid-item">Made the main menu.</div>
+                <div class="grid-item">Ludvig</div>
+
+                <div class="grid-item">frontpage.html</div>
+                <div class="grid-item">Made the frontpage</div>
+                <div class="grid-item">Ludvig</div>
+
+                <div class="grid-item">universal.js</div>
+                <div class="grid-item">Made the linkroll, resetScale and applyScaleEffect functions</div>
+                <div class="grid-item">Ludvig</div>
+            </div>
+        </div>
   </body>
 </html>
