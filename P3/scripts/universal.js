@@ -233,5 +233,3 @@ function checkout(){
   checkoutTax.textContent = tax;
   total.textContent = newPrice;
 }
-
-// Call the function to update the price

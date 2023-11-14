@@ -160,6 +160,7 @@ footer {
     
       .content {
         display: none;
+        top: 80px;
         position: absolute;
         min-width: 160px;
         left: 0;
@@ -289,10 +290,9 @@ footer {
     font-size: large;
     padding: 30px;
     margin-right: 100px;
-    margin-top: -470px;
+    margin-top: 40px;
     margin-left: 600px;
     font-family: Inter, sans-serif;
-
     border-radius: 10%;
 }
 #ab1 {
@@ -719,6 +719,7 @@ footer {
     display: flex; /* Use flexbox for the container */
     position: relative;
     margin-top: 10vh;
+    margin: 0;
 }
 
 #product--image {
@@ -749,6 +750,24 @@ footer {
     max-width: 70ch;
     margin-bottom: 5vh;
     
+}
+
+@media only screen and (max-width: 768px) {
+
+    product--image {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        object-fit: 0;
+    }
+    product--description {
+        margin-right: 0;
+        margin-left: 10%;
+        margin-top: 1px;
+        font-size: 8px;
+        width: 100ch;
+    }
 }
 
 #product--header,
