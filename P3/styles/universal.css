@@ -752,6 +752,24 @@ footer {
     
 }
 
+@media only screen and (max-width: 768px) {
+
+    product--image {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        object-fit: 0;
+    }
+    product--description {
+        margin-right: 0;
+        margin-left: 10%;
+        margin-top: 1px;
+        font-size: 8px;
+        width: 100ch;
+    }
+}
+
 #product--header,
 #product--price {
     position: relative;
