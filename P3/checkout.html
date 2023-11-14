@@ -10,7 +10,6 @@
       font-family: 'Inter', sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      margin: 20px;
     }
 
     h1 {
@@ -36,9 +35,9 @@
       padding: 10px;
       border-radius: 10px;
       box-sizing: border-box;
-      margin-right: 100px;
+      margin-right: 300px;
       float: right;
-      margin-top: -800px;
+      margin-top: -1000px;
     }
 
     .c1 {
@@ -98,52 +97,78 @@
     #navn {
       margin-right: 140px;
     }
+    @media only screen and (max-width: 768px) {
+      .container {
+        float: bottom;
+        flex-direction: column;
+        width: auto;
+      }
+
+      .form-container {
+        position: relative;
+      }
+
+      .box {
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #next {
+        margin-top: 10px;
+      }
+    }
   </style>      
 </head>
 <body>
   <div id="hovedmeny"></div>
   <h1>Checkout</h1>
   <div class="container">
-    <div class="form-container">
+    <form class="form-container" action="error.html"> <!--Whoopsies-->
       <div class="c1">
         <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
+        <input type="text" name="fname" id="fname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
       </div>
       <div class="c1">
         <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}">
+        <input type="text" name="lname" id="lname" pattern="[A-Za-zæøåÆØÅ\s\-]{1,}" required>
       </div>
       <div class="c1">
         <label for="sname">Street Name</label>
-        <input type="text" id="sname" name="sname">
+        <input type="text" id="sname" name="sname" required>
       </div>
       <div class="c1">
         <label for="pcode">Postal Code</label>
-        <input type="text" id="pcode" name="pcode">
+        <input type="text" id="pcode" name="pcode" required>
       </div>
       <div class="c1">
         <label for="city">City</label>
-        <input type="text" id="city" name="city">
+        <input type="text" id="city" name="city" required>
       </div>
       <div class="c1">
         <label for="province">Province</label>
-        <input type="text" id="province" name="province">
+        <input type="text" id="province" name="province" required>
       </div>
       <div class="c1">
         <label for="numb">Phone Number</label>
-        <input type="text" id="numb" name="numb">
+        <input type="text" id="numb" name="numb" required>
       </div>
-      <div class="c1">
-        <input type="submit" value="Next" class="btn" id="next">
-      </div>
-    </div>
+        <div class="c1">
+          <input type="submit" value="Next" class="btn" id="next">
+        </div>
+    </form>
   </div>
   <div class="box">
     <h4>Order summary</h4>
-    <p id="navn">Product price:</p><p id="pris">18000 kr</p>
+    <p id="navn">Product price:</p><p id="pretax">18000 kr</p>
     <p id="navn">Shipping:<p id="pris">100 kr</p>
-    <p id="navn">Tax: </p><p id="pris">900 kr</p>
-    <p id="navn">Order total: </p><p id="pris">19000 kr</p>
+    <p id="navn">Tax: </p><p id="tax">900 kr</p>
+    <p id="navn">Order total: </p><p id="total">19000 kr</p>
   </div>
 </body>
 <footer>
