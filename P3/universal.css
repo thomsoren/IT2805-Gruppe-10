@@ -791,3 +791,7 @@ footer {
 .sellerLabel{
     margin-bottom: 10px;
 }
+
+::-webkit-file-upload-button{
+    display: none;
+}

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sell watch</title>
   <link rel="stylesheet" href="universal.css" />
-  <title>Document</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
@@ -30,17 +29,19 @@
         <option value="Vacheron Constantin">Vacheron Constantin</option>
         <option value="Blancpain">Blancpain</option>
         <option value="other">Other</option>
-        <option selected="selected" hidden></option>
+        <option selected="selected" hidden label=" "></option>
       </select>
 
       <label for="description" class="sellerLabel">Description</label>
+      <textarea name="description" id="description" wrap="soft" class="sellerInformation" style="height: 100px; resize: vertical; max-height: 150px;" required></textarea>
       
-      <textarea name="description" id="description" wrap="soft" class="sellerInformation" style="height: 100px; resize: vertical;" required></textarea>
       <label for="price" class="sellerLabel">Desired price</label>
       <input name="price" id="price" class="sellerInformation" pattern="[0-9,]+" required>
 
-      <label for="picture" class="sellerLabel">Add picture</label>
-      <input type="file" multiple="multiple" name="picture" id="picture" class="sellerInformation" required style="padding: 5px 0 0 5px; width: 100px; content-visibility: hidden;">
+      <label for="image" class="sellerLabel">Add picture</label>
+      <input type="file" multiple="multiple" name="image" id="image" 
+          class="sellerInformation" accept="image/*"
+          style="padding: 5px 0 0 5px; width: 100px; content-visibility: hidden;" onChange="updateFileInputVisibility()" required>
 
       <label for="address" class="sellerLabel">Address</label>
       <input name="address" id="address" class="sellerInformation" required>
@@ -55,9 +56,18 @@
             color: white;">
     </div>
   </form>
-</body>
-<footer>
+
+  <script>
+    function updateFileInputVisibility() {
+      const fileInput = document.getElementById('image');
+      fileInput.style.contentVisibility = 'visible';
+      fileInput.style.width = 'fit-content';
+    }
+  </script>
+
+  <footer>
   <div id="footer"></div>
   <script src="universal.js"></script>
-</footer>
+  </footer>
+</body>
 </html>
