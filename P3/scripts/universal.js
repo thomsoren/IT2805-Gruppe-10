@@ -23,7 +23,7 @@ const meny = `
 
 document.querySelector('#hovedmeny').innerHTML = meny
 
-const footer = `
+const footer = ` 
 <footer>
 <div class="flex-container">
       <div class="flex-box">

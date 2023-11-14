@@ -30,7 +30,7 @@ body {
     font-size: 2vw;
     color: #F1F1F1;
     text-decoration: none; /* To remove the default underline for links */
-    font-family: "Inter300";
+    font-family: 'Inter';
     display: inline-block; /* Change display property to make them display vertically */
     transition: 0.15s;
     width: 15vw;
@@ -797,3 +797,4 @@ footer {
 ::-webkit-file-upload-button{
     display: none;
 }
+
