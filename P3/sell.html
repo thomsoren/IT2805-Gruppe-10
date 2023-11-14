@@ -38,8 +38,10 @@
       <label for="price" class="sellerLabel">Desired price</label>
       <input name="price" id="price" class="sellerInformation" pattern="[0-9,]+" required>
 
-      <label for="picture" class="sellerLabel">Add picture</label>
-      <input type="file" multiple="multiple" name="picture" id="picture" class="sellerInformation" required style="padding: 5px 0 0 5px; width: 170px;">
+      <label for="image" class="sellerLabel">Add picture</label>
+      <input type="file" multiple="multiple" name="image" id="image" 
+          class="sellerInformation" accept="image/*"
+          style="padding: 5px 0 0 5px; width: 100px; content-visibility: hidden;" onChange="updateFileInputVisibility()" required>
 
       <label for="address" class="sellerLabel">Address</label>
       <input name="address" id="address" class="sellerInformation" required>
@@ -54,6 +56,14 @@
             color: white;">
     </div>
   </form>
+
+  <script>
+    function updateFileInputVisibility() {
+      const fileInput = document.getElementById('image');
+      fileInput.style.contentVisibility = 'visible';
+      fileInput.style.width = 'fit-content';
+    }
+  </script>
 
   <footer>
   <div id="footer"></div>
