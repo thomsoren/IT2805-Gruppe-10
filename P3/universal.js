@@ -187,6 +187,12 @@ function individualWatchesImage() {
 //Skriver ut bilde.
 }
 
+function updateFileInputVisibility() {
+  const fileInput = document.getElementById('image');
+  fileInput.style.contentVisibility = 'visible';
+  fileInput.style.width = 'fit-content';
+}
+
 function checkout(){
   let url = window.location.href;
 
