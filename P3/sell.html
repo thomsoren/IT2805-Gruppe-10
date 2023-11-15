@@ -15,7 +15,7 @@
 <body>
   
   <div id="hovedmeny"></div>
-    
+  <div class="container">
   <form action="error.html">
     <div id="sellerForm">
       <label for="name" class="sellerLabel">Name of watch</label>
@@ -41,7 +41,7 @@
       <label for="image" class="sellerLabel">Add picture</label>
       <input type="file" multiple="multiple" name="image" id="image" 
           class="sellerInformation" accept="image/*"
-          style="padding: 5px 0 0 5px; width: 100px; content-visibility: hidden;" onChange="updateFileInputVisibility()" required>
+          style="padding: 5px 0 0 5px; width: 100px; content-visibility: hidden; max-width: 100%" onChange="updateFileInputVisibility()" required>
 
       <label for="address" class="sellerLabel">Address</label>
       <input name="address" id="address" class="sellerInformation" required>
@@ -50,12 +50,14 @@
       <input type="email" name="email" id="email" class="sellerInformation" required>
 
       <input type="submit" value="Next" class="sellerInformation" 
-      style="width:100px; 
-            margin-left: 300px; 
-            background-color: #4A4E69;
-            color: white;">
+      style="    width: 100px;
+      background-color: #4A4E69;
+      color: white;
+      position: relative;
+      margin-left: calc(100% - 100px);">
     </div>
   </form>
+</div>
   <footer>
   <div id="footer"></div>
   <script src="scripts/universal.js"></script>
