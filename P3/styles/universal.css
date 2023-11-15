@@ -619,8 +619,8 @@ footer {
 }
 
 #sellerForm{    /*Styled div for the seller form*/
-    margin:40px auto 40px auto;
-    width: 40%;
+    margin:3% auto 3% auto;
+    width: 500px;
     display: flex;
     flex-flow: column wrap;
     height: auto;
